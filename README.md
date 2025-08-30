@@ -1,6 +1,7 @@
 # 全网VIP视频免费破解去广告
 
-## 脚本下载地址：[全网vip视频免费破解](https://greasyfork.org/zh-CN/scripts/537189-%E5%85%A8%E7%BD%91vip%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3)
+## 脚本下载地址1：[全网vip视频免费破解](https://scriptcat.org/zh-CN/script-show-page/4107)
+## 脚本下载地址2：[全网vip视频免费破解](https://greasyfork.org/zh-CN/scripts/537189-%E5%85%A8%E7%BD%91vip%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3)
 
 1、本脚本使用的**解析接口全部收集自互联网（注意：解析出来的视频质量问题本脚本并不能处理）**
 
