@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name              全网VIP视频免费破解
 // @namespace         http://tampermonkey.net/
-// @version           2.0
+// @version           2.0.1
 // @description       全网VIP视频免费破解；
-// @icon              data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAkACQAAD//gAUU29mdHdhcmU6IFNuaXBhc3Rl/9sAQwADAgIDAgIDAwMDBAMDBAUIBQUEBAUKBwcGCAwKDAwLCgsLDQ4SEA0OEQ4LCxAWEBETFBUVFQwPFxgWFBgSFBUU/9sAQwEDBAQFBAUJBQUJFA0LDRQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQU/8AAEQgAGgAeAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8A8/stTivZLhFV0eBtrhwB+PXpXc/Bj4bXXxy1ObTdE1XTrDUE3GO31PzkMyqMsytHE64Gf4iD6A15TrUx0fUriVQcXcBUY/vjivpb9hGz+w/GLTocYK6dcbvqQCa/Q6ec46dWth21zUFNzdt3zfuvS8btng5rwnkuCy3DZrSi3DGyoqiuZ6JQf1m/flq2hG+yMPTf2e9X1nVPEFlZa9olx/YTmO9nDXKxo4LB1G6AMxUockDB7E1i+Jvg/rnhzw/peuRSWut6RqP+pu9MMjgHBIDK6KwOAe3bBwa+g/hQEPiP41CVmSM6ndbmRdxA3zZIGRn8xXkniP42Wdr4C0Dwp4XhvPI0/wDeTX2oIsbyvhshUR2AGWJ5Y9h71+cUuKuK8ZxVisry6KqUqFSkpJxSiqc6DnKUp7qXPyqKV7pv3WtV8NWyzLKGAhXrNxlNTtZ3fNGdkku3Le/5njU1tDcbfNiSXacrvUHB9q3/AA/438R+Eo5o9D1/VNGSYhpV0+8kgDkdCwRhn8axaK/od0abbbitd9N7bXPh/rNflhDndo3sruyvvbtfrbc6Kf4j+LLq4uJ5vFGszT3CCOaSTUJmaVBnCsS2SBk8H1Nc7RRUU8NRoylOlBRcrXaSTdtFfvZbGU6tSpbnk3buz//Z
+// @icon              https://nuaa.tech/zz.svg
 // @author            https://pro.gleeze.com/article/46
 // @include           *://v.qq.com/x/page/*
 // @include           *://v.qq.com/x/cover/*
@@ -43,7 +43,7 @@
 // @include           *://m.bilibili.com/anime/*
 // @include           *://m.bilibili.com/video/*
 // @include           *://m.bilibili.com/bangumi/play/*
-// @require           https://update.greasyfork.org/scripts/494892/1376206/jquery-351.js
+// @require           https://update.greasyfork.org.cn/scripts/494892/1376206/jquery-351.js
 // @connect           api.bilibili.com
 // @grant             unsafeWindow
 // @grant             GM_addStyle
@@ -53,6 +53,8 @@
 // @grant             GM_xmlhttpRequest
 // @charset		      UTF-8
 // @license           GPL License
+// @downloadURL https://update.greasyfork.org.cn/scripts/537189/%E5%85%A8%E7%BD%91VIP%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3.user.js
+// @updateURL https://update.greasyfork.org.cn/scripts/537189/%E5%85%A8%E7%BD%91VIP%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3.meta.js
 // ==/UserScript==
 
 const util = (function () {
@@ -175,12 +177,12 @@ const superVip = (function () {
             },
             {host: "www.bilibili.com", container: "#player_module,#bilibiliPlayer,#bilibili-player", name: "Default", displayNodes: []},
             {host: "m.bilibili.com", container: ".player-wrapper,.player-container,.mplayer", name: "Default", displayNodes: []},
-            {host: "www.iqiyi.com", container: "iqpdiv.iqp-player", name: "Default", displayNodes: ["#playerPopup", "#vipCoversBox" ,"#video > div.covers_cloudCover__ILy8R.covers_pcw__jFO8q","div[class^=qy-header-login-pop]"]},
+            {host: "www.iqiyi.com", container: "#outlayer, .iqp-player-videolayer", name: "Default", displayNodes: ["#playerPopup", "#vipCoversBox" ,"div.iqp-player-vipmask", "div.iqp-player-paymask","div.iqp-player-loginmask", "div[class^=qy-header-login-pop]",".covers_cloudCover__ILy8R","#videoContent > div.loading_loading__vzq4j",".iqp-player-guide"]},
             {
                 host: "m.iqiyi.com",
-                container: ".m-video-player-wrap,iqpdiv.iqp-player",
+                container: ".m-video-player-wrap, .iqp-player-videolayer",
                 name: "Default",
-                displayNodes: ["div.m-iqyGuide-layer", "a[down-app-android-url]", "[name=m-extendBar]", "[class*=ChannelHomeBanner]", "section.m-hotWords-bottom"]
+                displayNodes: ["div.m-iqyGuide-layer", "a[down-app-android-url]", "div.iqp-player-vipmask", ".loading_loading__vzq4j","[name=m-extendBar]", "[class*=ChannelHomeBanner]", "section.m-hotWords-bottom"]
             },
             {host: "www.iq.com", container: ".intl-video-wrap", name: "Default", displayNodes: []},
             {host: "v.youku.com", container: "#playerMouseWheel", name: "Default", displayNodes: ["#iframaWrapper"]},
@@ -222,15 +224,15 @@ const superVip = (function () {
         generateElement(container) {
             GM_addStyle(`
                         #${_CONFIG_.vipBoxId} {cursor:pointer; position:fixed; top:120px; left:0px; z-index:9999999; text-align:left;}
-                        #${_CONFIG_.vipBoxId} .img_box{width:32px; height:32px;line-height:32px;text-align:center;background-color:#1c84c6;margin:5px 0px;}
+                        #${_CONFIG_.vipBoxId} .img_box{width:32px; height:32px;line-height:32px;text-align:center;background-color:#7d4aee;margin:5px 0px;}
                         #${_CONFIG_.vipBoxId} .vip_list {display:none; position:absolute; border-radius:5px; left:32px; top:0; text-align:center; background-color: #3f4149; border:1px solid white;padding:10px 0px; width:380px; max-height:400px; overflow-y:auto;}
-                        #${_CONFIG_.vipBoxId} .vip_list li{border-radius:2px; font-size:12px; color:#DCDCDC; text-align:center; width:calc(25% - 14px); line-height:21px; float:left; border:1px solid gray; padding:0 4px; margin:4px 2px;overflow:hidden;white-space: nowrap;text-overflow: ellipsis;-o-text-overflow:ellipsis;}
-                        #${_CONFIG_.vipBoxId} .vip_list li:hover{color:#1c84c6; border:1px solid #1c84c6;}
+                        #${_CONFIG_.vipBoxId} .vip_list li{border-radius:2px; font-size:12px; color:#E6E6E6; text-align:center; width:calc(25% - 14px); line-height:21px; float:left; border:1px solid gray; padding:0 4px; margin:4px 2px;overflow:hidden;white-space: nowrap;text-overflow: ellipsis;-o-text-overflow:ellipsis;}
+                        #${_CONFIG_.vipBoxId} .vip_list li:hover{color:#00dffc; border:1px solid #00dffc;}
                         #${_CONFIG_.vipBoxId} .vip_list ul{padding-left: 10px;}
                         #${_CONFIG_.vipBoxId} .vip_list::-webkit-scrollbar{width:5px; height:1px;}
-                        #${_CONFIG_.vipBoxId} .vip_list::-webkit-scrollbar-thumb{box-shadow:inset 0 0 5px rgba(0, 0, 0, 0.2); background:#A8A8A8;}
-                        #${_CONFIG_.vipBoxId} .vip_list::-webkit-scrollbar-track{box-shadow:inset 0 0 5px rgba(0, 0, 0, 0.2); background:#F1F1F1;}
-                        #${_CONFIG_.vipBoxId} li.selected{color:#1c84c6; border:1px solid #1c84c6;}
+                        #${_CONFIG_.vipBoxId} .vip_list::-webkit-scrollbar-thumb{box-shadow:inset 0 0 6px rgba(0, 0, 0, 0.2); background:#B8B8B8;}
+                        #${_CONFIG_.vipBoxId} .vip_list::-webkit-scrollbar-track{box-shadow:inset 0 0 6px rgba(0, 0, 0, 0.2); background:#F5F5F5;}
+                        #${_CONFIG_.vipBoxId} li.selected{color:#00dffc; border:1px solid #00dffc;}
 						`);
 
             let type_1_str = "";
@@ -256,14 +258,14 @@ const superVip = (function () {
                         <div class="img_box" title="选择解析源" style="color:white;font-size:16px;font-weight:bold;border-radius:5px;"><span style="color: red;">V</span>I<span style="color: yellow;">P</span></div>
                         <div class="vip_list">
                             <div>
-                                <h3 style="color:#1c84c6; font-weight: bold; font-size: 16px; padding:5px 0px;">[内嵌播放]</h3>
+                                <h3 style="color:#00dffc; font-weight: bold; font-size: 16px; padding:5px 0px;">[内嵌播放]</h3>
                                 <ul>
                                     ${type_1_str}
                                     <div style="clear:both;"></div>
                                 </ul>
                             </div>
                             <div>
-                                <h3 style="color:#1c84c6; font-weight: bold; font-size: 16px; padding:5px 0px;">[弹窗播放不带选集]</h3>
+                                <h3 style="color:#00dffc; font-weight: bold; font-size: 16px; padding:5px 0px;">[弹窗播放不带选集]</h3>
                                 <ul>
                                     ${type_3_str}
                                     <div style="clear:both;"></div>
