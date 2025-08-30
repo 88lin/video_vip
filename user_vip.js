@@ -43,7 +43,7 @@
 // @include           *://m.bilibili.com/anime/*
 // @include           *://m.bilibili.com/video/*
 // @include           *://m.bilibili.com/bangumi/play/*
-// @require           https://update.greasyfork.org.cn/scripts/494892/1376206/jquery-351.js
+// @require           https://update.greasyfork.org/scripts/494892/1376206/jquery-351.js
 // @connect           api.bilibili.com
 // @grant             unsafeWindow
 // @grant             GM_addStyle
