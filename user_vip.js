@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              全网VIP视频免费破解
 // @namespace         http://tampermonkey.net/
-// @version           2.0.1
+// @version           2.0.2
 // @description       全网VIP视频免费破解；
 // @icon              https://nuaa.tech/zz.svg
 // @author            https://pro.gleeze.com/article/46
@@ -134,10 +134,10 @@ const superVip = (function () {
         autoPlayerKey: "auto_player_key" + window.location.host,
         autoPlayerVal: "auto_player_value_" + window.location.host,
         videoParseList: [
-            {"name": "HLS解析", "type": "1,3", "url": "https://jx.hls.one/?url="},
-            {"name": "冰豆解析", "type": "1,3", "url": "https://bd.jx.cn/?url="},
-            {"name": "973解析", "type": "1,3", "url": "https://jx.973973.xyz/?url="},
             {"name": "789解析", "type": "1,3", "url": "https://jiexi.789jiexi.icu:4433/?url="},
+			{"name": "极速解析", "type": "1,3", "url": "https://jx.2s0.cn/player/?url="},
+			{"name": "冰豆解析", "type": "1,3", "url": "https://bd.jx.cn/?url="},
+            {"name": "973解析", "type": "1,3", "url": "https://jx.973973.xyz/?url="},
             {"name": "虾米视频解析", "type": "1,3", "url": "https://jx.xmflv.com/?url="},
             {"name": "CK", "type": "1,3", "url": "https://www.ckplayer.vip/jiexi/?url="},
             {"name": "七哥解析", "type": "1,3", "url": "https://jx.nnxv.cn/tv.php?url="},
@@ -145,9 +145,9 @@ const superVip = (function () {
             {"name": "盘古", "type": "1,3", "url": "https://www.pangujiexi.com/jiexi/?url="},
             {"name": "playm3u8", "type": "1,3", "url": "https://www.playm3u8.cn/jiexi.php?url="},
             {"name": "七七云解析", "type": "1,3", "url": "https://jx.77flv.cc/?url="},
-            {"name": "极速解析", "type": "1,3", "url": "https://jx.2s0.cn/player/?url="},
             {"name": "芒果TV1", "type": "1,3", "url": "https://video.isyour.love/player/getplayer?url="},
             {"name": "芒果TV2", "type": "1,3","url":"https://im1907.top/?jx="},
+			{"name": "HLS解析", "type": "1,3", "url": "https://jx.hls.one/?url="},
         ],
         playerContainers: [
             {
