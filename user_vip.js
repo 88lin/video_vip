@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              全网VIP视频免费破解
 // @namespace         http://tampermonkey.net/
-// @version           2.0.2
+// @version           2.0.3
 // @description       全网VIP视频免费破解；
 // @icon              https://nuaa.tech/zz.svg
 // @author            https://pro.gleeze.com/article/46
@@ -138,6 +138,7 @@ const superVip = (function () {
 			{"name": "极速解析", "type": "1,3", "url": "https://jx.2s0.cn/player/?url="},
 			{"name": "冰豆解析", "type": "1,3", "url": "https://bd.jx.cn/?url="},
             {"name": "973解析", "type": "1,3", "url": "https://jx.973973.xyz/?url="},
+			{"name": "Player-JY", "type": "1,3", "url": "https://jx.playerjy.com/?url="},
             {"name": "虾米视频解析", "type": "1,3", "url": "https://jx.xmflv.com/?url="},
             {"name": "CK", "type": "1,3", "url": "https://www.ckplayer.vip/jiexi/?url="},
             {"name": "七哥解析", "type": "1,3", "url": "https://jx.nnxv.cn/tv.php?url="},
