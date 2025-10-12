@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              全网VIP视频免费破解
 // @namespace         http://tampermonkey.net/
-// @version           2.0.3
+// @version           2.0.4
 // @description       全网VIP视频免费破解；
 // @icon              https://nuaa.tech/zz.svg
 // @author            https://pro.gleeze.com/article/46
