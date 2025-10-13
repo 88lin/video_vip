@@ -50,7 +50,12 @@
 
 #### 手机端（iOS）
 
-- **Safari**：[Tampermonkey](http://tampermonkey.net/?browser=safari) 或 [Userscripts(ios15+)](https://apps.apple.com/app/userscripts/id1463298887)
+- **Safari**：[Tampermonkey](http://tampermonkey.net/?browser=safari) 或 [Userscripts(ios15+)](https://apps.apple.com/app/userscripts/id1463298887) | [教程](https://blog.csdn.net/weixin_44786530/article/details/129695622)
+
+#### 网页端
+
+- **链接**：[全网VIP视频云解析](https://home.nuaa.tech/vip/index.html)
+**(复制的视频链接一定要是桌面版，若手机访问可切换为桌面网站)**
 
 ### 2. 安装脚本
 
