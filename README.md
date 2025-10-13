@@ -38,7 +38,6 @@
 - **Microsoft Edge**：[Tampermonkey](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd)
 - **Opera**：[Tampermonkey](https://addons.opera.com/extensions/details/tampermonkey-beta/)
 - **Maxthon**：[Violentmonkey](http://extension.maxthon.com/detail/index.php?view_id=1680)
-- **AdGuard**：（不需要其他软件）
 
 #### 手机端（Android）
 
@@ -47,7 +46,7 @@
 - **Dolphin**：[Tampermonkey](https://play.google.com/store/apps/details?id=net.tampermonkey.dolphin)
 - **UC**：[Tampermonkey](https://www.tampermonkey.net/?browser=ucweb&ext=dhdg)
 - **Kiwi**：[Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) 或 [Violentmonkey](https://chrome.google.com/webstore/detail/violent-monkey/jinjaccalgkegednnccohejagnlnfdag)
-- **X浏览器**：（不需要其他软件）
+- **X浏览器**：观看视频时浏览器需切换UA为桌面模式（电脑UA/查看桌面网站）
 
 #### 手机端（iOS）
 
