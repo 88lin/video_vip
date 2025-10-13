@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              全网VIP视频免费破解
 // @namespace         http://tampermonkey.net/
-// @version           2.0.4
+// @version           2.0.5
 // @description       全网VIP视频免费破解；
 // @icon              https://nuaa.tech/zz.svg
 // @author            https://pro.gleeze.com/article/46
@@ -16,10 +16,7 @@
 // @include           *://*.youku.com/video*
 // @include           *://*.youku.com/*?vid=*
 // @include           *://*.mgtv.com/b/*
-// @include           *://*.tudou.com/listplay/*
-// @include           *://*.tudou.com/programs/view/*
-// @include           *://*.tudou.com/albumplay/*
-// @include           *://film.sohu.com/album/*
+// @include           *://*.tudou.com/v_*
 // @include           *://tv.sohu.com/v/*
 // @include           *://*.bilibili.com/video/*
 // @include           *://*.bilibili.com/bangumi/play/*
@@ -30,20 +27,20 @@
 // @include           *://*.acfun.cn/v/*
 // @include           *://*.acfun.cn/bangumi/*
 // @include           *://*.1905.com/play/*
-// @include           *://m.v.qq.com/x/page/*
-// @include           *://m.v.qq.com/x/cover/*
+// @include           *://m.v.qq.com/x/m/*
 // @include           *://m.v.qq.com/*
 // @include           *://m.iqiyi.com/*
-// @include           *://m.iqiyi.com/kszt/*
+// @include           *://m.iqiyi.com/v_*
 // @include           *://m.youku.com/video/*
+// @include           *://m.youku.com/alipay_*
 // @include           *://m.mgtv.com/b/*
 // @include           *://m.tv.sohu.com/v/*
-// @include           *://m.film.sohu.com/album/*
+// @include           *://m.tv.sohu.com/album/*
 // @include           *://m.pptv.com/show/*
 // @include           *://m.bilibili.com/anime/*
 // @include           *://m.bilibili.com/video/*
 // @include           *://m.bilibili.com/bangumi/play/*
-// @require           https://cdn.jsdmirror.com/npm/jquery@3.5.1/dist/jquery.min.js
+// @require           https://cdn.jsdmirror.com/npm/jquery@3.7.1/dist/jquery.min.js
 // @connect           api.bilibili.com
 // @grant             unsafeWindow
 // @grant             GM_addStyle
@@ -53,8 +50,6 @@
 // @grant             GM_xmlhttpRequest
 // @charset		      UTF-8
 // @license           GPL License
-// @downloadURL https://update.greasyfork.org.cn/scripts/537189/%E5%85%A8%E7%BD%91VIP%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3.user.js
-// @updateURL https://update.greasyfork.org.cn/scripts/537189/%E5%85%A8%E7%BD%91VIP%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3.meta.js
 // ==/UserScript==
 
 const util = (function () {
@@ -403,6 +398,28 @@ const superVip = (function () {
                         }
                         if (_CONFIG_.isMobile && window.location.href.indexOf("iqiyi.com") !== -1) {
                             iframeDivCss = "width:100%;height:450px;z-index:999999;margin-top:-56.25%;";
+                        }
+                        try {
+                            if (location.host.indexOf("youku.com") !== -1) {
+                                const youkuSelectors = [
+                                    "#youku-dashboard > div.kui-dashboard-dashboard-panel",
+                                    "#youku-dashboard > div.kui-dashboard-dashboard-background",
+                                    "#youku-dashboard > div.kui-dashboard-bar-container",
+                                    "#youku-dashboard > div.kui-dashboard-timer-container"
+                                ];
+                                // 多次尝试清理，兼容异步渲染/延迟挂载
+                                let attempts = 0;
+                                const maxAttempts = 3;
+                                const tid = setInterval(() => {
+                                    attempts++;
+                                    youkuSelectors.forEach(sel => {
+                                        document.querySelectorAll(sel).forEach(n => n.remove());
+                                    });
+                                    if (attempts >= maxAttempts) clearInterval(tid);
+                                }, 500);
+                            }
+                        } catch (e) {
+                            console.warn("Youku cleanup error:", e);
                         }
                         $(container).append(`<div style="${iframeDivCss}"><iframe id="iframe-player-4a5b6c" src="${url}" style="border:none;" allowfullscreen="true" width="100%" height="100%"></iframe></div>`);
                     }
