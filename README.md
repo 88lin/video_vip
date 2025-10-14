@@ -264,5 +264,8 @@
 本项目采用 [GPL License](https://www.gnu.org/licenses/gpl-3.0.txt) 开源许可证。
 
 ---
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=88lin/video_vip&type=date&legend=top-left)](https://www.star-history.com/#88lin/video_vip&type=date&legend=top-left)
 
 **温馨提示：** 好工具大家共享，请合理使用。请尊重版权，支持正版。本脚本仅供学习和研究使用，请在试用后购买正版会员支持您喜欢的内容创作者。
