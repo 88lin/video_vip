@@ -131,6 +131,7 @@ const superVip = (function () {
         autoPlayerKey: "auto_player_key" + window.location.host,
         autoPlayerVal: "auto_player_value_" + window.location.host,
         videoParseList: [
+			{"name": "麒麟解析", "type": "1,3", "url": "https://svip.qlplayer.cyou/?url="},
             {"name": "789解析", "type": "1,3", "url": "https://jiexi.789jiexi.icu:4433/?url="},
 			{"name": "极速解析", "type": "1,3", "url": "https://jx.2s0.cn/player/?url="},
 			{"name": "冰豆解析", "type": "1,3", "url": "https://bd.jx.cn/?url="},
