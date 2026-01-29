@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              全网VIP视频免费破解去广告【最新】
 // @namespace         http://tampermonkey.net/
-// @version           2.1.0
+// @version           2.1.1
 // @description       【全网VIP视频免费破解去广告，适配PC+移动】，全网VIP视频解析：爱奇艺、腾讯、优酷、bilibili等视频免费解析！🔥真4K高清🔥【脚本长期维护更新，完全免费，无广告，仅限学习交流！！】
 // @icon              https://nuaa.tech/zz.svg
 // @author            茉灵智库：https://easys.cc.cd/article/46
@@ -142,7 +142,6 @@ const superVip = (function () {
             {"name": "虾米解析", "type": "1,3", "url": "https://jx.xmflv.com/?url="},
             {"name": "CK", "type": "1,3", "url": "https://www.ckplayer.vip/jiexi/?url="},
             {"name": "七哥解析", "type": "1,3", "url": "https://jx.nnxv.cn/tv.php?url="},
-            {"name": "夜幕", "type": "1,3", "url": "https://www.yemu.xyz/?url="},
             {"name": "盘古", "type": "1,3", "url": "https://www.pangujiexi.com/jiexi/?url="},
             {"name": "playm3u8", "type": "1,3", "url": "https://www.playm3u8.cn/jiexi.php?url="},
             {"name": "七七云解析", "type": "1,3", "url": "https://jx.77flv.cc/?url="},
