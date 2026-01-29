@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name              【最新】全网VIP视频免费破解去广告
+// @name              全网VIP视频免费破解去广告【最新】
 // @namespace         http://tampermonkey.net/
 // @version           2.1.0
 // @description       【全网VIP视频免费破解去广告，适配PC+移动】，全网VIP视频解析：爱奇艺、腾讯、优酷、bilibili等视频免费解析！🔥真4K高清🔥【脚本长期维护更新，完全免费，无广告，仅限学习交流！！】
 // @icon              https://nuaa.tech/zz.svg
-// @author            https://easys.cc.cd/article/46
+// @author            茉灵智库：https://easys.cc.cd/article/46
 // @include           *://v.qq.com/x/page/*
 // @include           *://v.qq.com/x/cover/*
 // @include           *://v.qq.com/tv/*
@@ -269,11 +269,12 @@ const superVip = (function () {
                                 </ul>
                             </div>
                             <div style="text-align:left;color:#FFF;font-size:10px;padding:0px 10px;margin-top:10px;">
-                                <b>自动解析功能说明：</b>
+                                <b>功能说明：</b>
                                 <br>&nbsp;&nbsp;1、自动解析功能默认关闭（自动解析只支持内嵌播放源）
                                 <br>&nbsp;&nbsp;2、如自动解析失败，请手动选择不同的解析源尝试
                                 <br>&nbsp;&nbsp;3、内嵌解析不了可以使用弹窗播放
-                                <br>&nbsp;&nbsp;4、如某些网站有会员可以关闭自动解析功能
+                                <br>&nbsp;&nbsp;4、公益脚本，完全免费，请勿上当受骗
+                                <br>&nbsp;&nbsp;5、如某些网站有会员可以关闭自动解析功能
                             </div>
                         </div>
                     </div>
