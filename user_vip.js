@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name              全网VIP视频免费破解去广告【最新】
+// @name              【最新】全网VIP视频免费破解去广告
 // @namespace         http://tampermonkey.net/
-// @version           2.0.8
+// @version           2.0.9
 // @description       【全网VIP视频免费破解去广告，适配PC+移动】，全网VIP视频解析：爱奇艺、腾讯、优酷、bilibili等视频免费解析！🔥真4K高清🔥【脚本长期维护更新，完全免费，无广告，仅限学习交流！！】
 // @icon              https://nuaa.tech/zz.svg
-// @author            https://pro.gleeze.com/article/46
+// @author            https://easys.cc.cd/article/46
 // @include           *://v.qq.com/x/page/*
 // @include           *://v.qq.com/x/cover/*
 // @include           *://v.qq.com/tv/*
@@ -131,7 +131,7 @@ const superVip = (function () {
         autoPlayerKey: "auto_player_key" + window.location.host,
         autoPlayerVal: "auto_player_value_" + window.location.host,
         videoParseList: [
-			{"name": "麒麟解析", "type": "3", "url": "https://svip.qlplayer.cyou/?url="},
+            {"name": "麒麟解析", "type": "3", "url": "https://rdfplayer.mrgaocloud.com/player/?url="},
             {"name": "789解析", "type": "1,3", "url": "https://jiexi.789jiexi.icu:4433/?url="},
 			{"name": "极速解析", "type": "1,3", "url": "https://jx.2s0.cn/player/?url="},
 			{"name": "冰豆解析", "type": "1,3", "url": "https://bd.jx.cn/?url="},
@@ -269,8 +269,8 @@ const superVip = (function () {
                             <div style="text-align:left;color:#FFF;font-size:10px;padding:0px 10px;margin-top:10px;">
                                 <b>自动解析功能说明：</b>
                                 <br>&nbsp;&nbsp;1、自动解析功能默认关闭（自动解析只支持内嵌播放源）
-                                <br>&nbsp;&nbsp;2、开启自动解析，网页打开后脚本将根据当前选中的解析源自动解析视频。如解析失败，请手动选择不同的解析源尝试
-                                <br>&nbsp;&nbsp;3、没有选中解析源将随机选取一个
+                                <br>&nbsp;&nbsp;2、如自动解析失败，请手动选择不同的解析源尝试
+                                <br>&nbsp;&nbsp;3、内嵌解析不了可以使用弹窗播放
                                 <br>&nbsp;&nbsp;4、如某些网站有会员可以关闭自动解析功能
                             </div>
                         </div>
@@ -424,7 +424,7 @@ const superVip = (function () {
                         } catch (e) {
                             console.warn("Youku cleanup error:", e);
                         }
-                        $(container).append(`<div style="${iframeDivCss}"><iframe id="iframe-player-4a5b6c" src="${url}" style="border:none;" allowfullscreen="true" width="100%" height="100%"></iframe></div>`);
+                        $(container).append(`<div style="position:absolute;top:0;left:0;width:100%;height:100%;"><iframe src="${url}" frameborder="0" allow="autoplay; encrypted-media; fullscreen" allowfullscreen referrerpolicy="no-referrer" style="width:100%;height:100%;border:none;"></iframe></div>`);
                     }
                 });
         }
