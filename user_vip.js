@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name              全网VIP视频免费破解去广告【最新】
 // @namespace         http://tampermonkey.net/
-// @version           2.1.1
-// @description       【全网VIP视频免费破解去广告，适配PC+移动】，全网VIP视频解析：爱奇艺、腾讯、优酷、bilibili等视频免费解析！🔥真4K高清🔥【脚本长期维护更新，完全免费，无广告，仅限学习交流！！】
-// @icon              https://nuaa.tech/zz.svg
+// @version           2.1.3
+// @description       全网VIP视频免费破解去广告，适配PC+移动，全网VIP视频解析：爱奇艺、腾讯、优酷、bilibili等视频免费解析！🔥真4K高清🔥【脚本长期维护更新，完全免费，无广告，仅限学习交流！！】
+// @icon              https://cdn.jsdmirror.com/gh/88lin/picx-images-hosting@master/favicon.67xwxgc03y.svg
 // @author            茉灵智库：https://easys.cc.cd/article/46
 // @include           *://v.qq.com/x/page/*
 // @include           *://v.qq.com/x/cover/*
@@ -50,8 +50,8 @@
 // @grant             GM_xmlhttpRequest
 // @charset		      UTF-8
 // @license           GPL License
-// @downloadURL https://update.greasyfork.org.cn/scripts/537189/%E5%85%A8%E7%BD%91VIP%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3.user.js
-// @updateURL https://update.greasyfork.org.cn/scripts/537189/%E5%85%A8%E7%BD%91VIP%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3.meta.js
+// @downloadURL https://www.tampermonkey.net/script_installation.php#url=https://scriptcat.org/scripts/code/4107/%E5%85%A8%E7%BD%91VIP%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3%E5%8E%BB%E5%B9%BF%E5%91%8A%E3%80%90%E6%9C%80%E6%96%B0%E3%80%91.user.js
+// @updateURL https://www.tampermonkey.net/script_installation.php#url=https://scriptcat.org/scripts/code/4107/%E5%85%A8%E7%BD%91VIP%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3%E5%8E%BB%E5%B9%BF%E5%91%8A%E3%80%90%E6%9C%80%E6%96%B0%E3%80%91.user.js
 // ==/UserScript==
 
 const util = (function () {
