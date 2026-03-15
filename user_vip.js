@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name              全网VIP视频免费破解去广告【最新】
+// @name              全网VIP视频免费破解去广告【最新3.0】
 // @namespace         http://tampermonkey.net/
-// @version           2.1.3
+// @version           3.0.0
 // @description       全网VIP视频免费破解去广告，适配PC+移动，全网VIP视频解析：爱奇艺、腾讯、优酷、bilibili等视频免费解析！🔥真4K高清🔥【脚本长期维护更新，完全免费，无广告，仅限学习交流！！】
 // @icon              https://cdn.jsdmirror.com/gh/88lin/picx-images-hosting@master/favicon.67xwxgc03y.svg
 // @author            茉灵智库：https://easys.cc.cd/article/46
@@ -51,7 +51,7 @@
 // @charset		      UTF-8
 // @license           GPL License
 // @downloadURL https://www.tampermonkey.net/script_installation.php#url=https://scriptcat.org/scripts/code/4107/%E5%85%A8%E7%BD%91VIP%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3%E5%8E%BB%E5%B9%BF%E5%91%8A%E3%80%90%E6%9C%80%E6%96%B0%E3%80%91.user.js
-// @updateURL https://www.tampermonkey.net/script_installation.php#url=https://scriptcat.org/scripts/code/4107/%E5%85%A8%E7%BD%91VIP%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3%E5%8E%BB%E5%B9%BF%E5%91%8A%E3%80%90%E6%9C%80%E6%96%B0%E3%80%91.user.js
+// @updateURL https://www.tampermonkey.net/script_installation.php#url=https://scriptcat.org/scripts/code/4107/%E5%85%A8%E7%BD%91VIP%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3%E5%8E%BB%E5%B9%BF%E5%91%8A%E3%80%90%E6%9C%80%E6%96%B0%E3%80%91.meta.js
 // ==/UserScript==
 
 const util = (function () {
@@ -131,11 +131,10 @@ const superVip = (function () {
         autoPlayerKey: "auto_player_key" + window.location.host,
         autoPlayerVal: "auto_player_value_" + window.location.host,
         videoParseList: [
-            {"name": "麒麟解析", "type": "3", "url": "https://rdfplayer.mrgaocloud.com/player/?url="},
             {"name": "789解析", "type": "1,3", "url": "https://jiexi.789jiexi.icu:4433/?url="},
+			{"name": "Player-JY", "type": "1,3", "url": "https://jx.playerjy.com/?url="},
 			{"name": "HLS解析", "type": "1,3", "url": "https://jx.hls.one/?url="},
 			{"name": "极速解析", "type": "1,3", "url": "https://jx.2s0.cn/player/?url="},
-			{"name": "Player-JY", "type": "1,3", "url": "https://jx.playerjy.com/?url="},
 			{"name": "冰豆解析", "type": "1,3", "url": "https://bd.jx.cn/?url="},
 			{"name": "剖元解析", "type": "1,3", "url": "https://www.pouyun.com/?url="},
             {"name": "973解析", "type": "1,3", "url": "https://jx.973973.xyz/?url="},
@@ -144,6 +143,7 @@ const superVip = (function () {
             {"name": "七哥解析", "type": "1,3", "url": "https://jx.nnxv.cn/tv.php?url="},
             {"name": "盘古", "type": "1,3", "url": "https://www.pangujiexi.com/jiexi/?url="},
             {"name": "playm3u8", "type": "1,3", "url": "https://www.playm3u8.cn/jiexi.php?url="},
+			{"name": "937解析", "type": "1,3", "url": "https://bfq.937auth.vip?url="},
             {"name": "七七云解析", "type": "1,3", "url": "https://jx.77flv.cc/?url="},
             {"name": "芒果TV1", "type": "1,3", "url": "https://video.isyour.love/player/getplayer?url="},
             {"name": "M1907", "type": "1,3","url":"https://im1907.top/?jx="},
