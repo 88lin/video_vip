@@ -17,7 +17,7 @@
 
 ## 📥 脚本下载地址
 
-### 脚本下载地址1：[全网vip视频免费破解](https://scriptcat.org/zh-CN/script-show-page/4107)
+### 脚本下载地址：[全网vip视频免费破解](https://cdn.jsdmirror.com/gh/88lin/video_vip@master/video_vip.user.js)
 **请注意：** 本脚本使用的**解析接口全部收集自互联网**。解析出的视频质量（如清晰度、速度）取决于接口提供方，**本脚本无法控制或保证**。
 
 ---
