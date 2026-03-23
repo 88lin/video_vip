@@ -52,7 +52,7 @@
 
 #### 网页端
 
-- **链接**：[全网VIP视频云解析](https://home.nuaa.tech/vip/index.html)
+- **链接**：[全网VIP视频云解析](https://go.88lin.eu.org/vip/index.html)
 
 ### 2. 安装脚本
 
