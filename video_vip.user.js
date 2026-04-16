@@ -50,8 +50,8 @@
 // @grant             GM_xmlhttpRequest
 // @charset		      UTF-8
 // @license           GPL License
-// @downloadURL https://cdn.jsdmirror.com/gh/88lin/video_vip@master/video_vip.user.js
-// @updateURL https://cdn.jsdmirror.com/gh/88lin/video_vip@master/video_vip.user.js
+// @downloadURL https://cdn.jsdmirror.com/gh/88lin/video_vip@main/video_vip.user.js
+// @updateURL https://cdn.jsdmirror.com/gh/88lin/video_vip@main/video_vip.user.js
 // ==/UserScript==
 
 const util = (function () {
