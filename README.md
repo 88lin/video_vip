@@ -349,3 +349,357 @@ Safari 保护文档：<https://adguard.com/kb/adguard-for-ios/features/safari-pr
 [![Star History Chart](https://api.star-history.com/svg?repos=88lin/video_vip&type=date&legend=top-left)](https://www.star-history.com/#88lin/video_vip&type=date&legend=top-left)
 
 **温馨提示：** 好工具大家共享，请合理使用。请尊重版权，支持正版。本脚本仅供学习和研究使用，请在试用后购买正版会员支持您喜欢的内容创作者。
+# 🎬 全网VIP视频免费解析脚本
+
+> 🌐 [English version available →
+# 🎬 Free VIP Video Parser Script (All Platforms)
+
+**If this project has been helpful to you, please give it a ⭐ Star — open-source work isn't easy, and your support keeps it going!**
+
+## ❤️ Sponsors
+
+Afdian (爱发电): https://ifdian.net/a/xiaozero
+
+## 📖 Project Overview
+
+This is a powerful userscript designed to help users watch VIP content on major video platforms for free. By integrating multiple third-party parsing APIs, the script bypasses membership restrictions and lets users enjoy videos without a paid subscription.
+
+### 🌟 Key Features
+
+- **Multi-platform support**: Covers all major Chinese video streaming sites
+- **Smart parsing**: Integrates multiple parsing APIs with automatic selection of the best option
+- **Auto-play**: Supports automatic parsing and playback
+- **Responsive design**: Works seamlessly on both desktop and mobile
+- **Customizable UI**: Drag the parsing button to any position on screen
+- **Regular updates**: Parsing APIs are refreshed periodically to ensure availability
+
+---
+
+## 📥 Script Download
+
+### Download link: [Free VIP Video Parser (All Platforms)](https://cdn.jsdelivr.net/gh/88lin/video_vip@main/video_vip.user.js)
+
+**Please note:** All parsing APIs used by this script are **collected from the public internet**. Video quality (resolution, speed, etc.) depends entirely on the API provider — **this script cannot control or guarantee it**.
+
+---
+
+## 🚀 Quick Start
+
+### 1. Install a Userscript Manager
+
+To use userscripts, you first need to install a userscript manager. Choose one based on your browser.
+
+#### Desktop
+
+- **Chrome**: [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or [Violentmonkey](https://chrome.google.com/webstore/detail/violent-monkey/jinjaccalgkegednnccohejagnlnfdag)
+- **Firefox**: [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/), [Tampermonkey](https://addons.mozilla.org/firefox/addon/tampermonkey/), or [Violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/)
+- **Safari**: [Tampermonkey](http://tampermonkey.net/?browser=safari) or [Userscripts](https://apps.apple.com/app/userscripts/id1463298887)
+- **Microsoft Edge**: [Tampermonkey](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd)
+- **Opera**: [Tampermonkey](https://addons.opera.com/extensions/details/tampermonkey-beta/)
+- **Maxthon**: [Violentmonkey](http://extension.maxthon.com/detail/index.php?view_id=1680)
+
+#### Permissions Reminder for Userscript Managers
+
+After installing `Tampermonkey`, `Violentmonkey`, or similar managers, **manually verify that "Allow userscripts" (or equivalent) is enabled** — otherwise, scripts may not run at all.
+
+How to check:
+
+1. Open your browser's **Extensions** or **Add-ons** page
+2. Find your installed userscript manager (e.g., Tampermonkey)
+3. Open its details page
+4. Confirm the following options exist and are **enabled**:
+   - **Allow userscripts**
+   - **Allow this extension to run userscripts**
+   - **Site access: On all sites**
+
+**Treat this as a mandatory step.**  
+If these permissions are not enabled, the script will not run even after a successful installation.
+
+#### Mobile (Android)
+
+- **Firefox**: [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/), [Tampermonkey](https://addons.mozilla.org/firefox/addon/tampermonkey/), or [Violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/)
+- **Maxthon**: [Violentmonkey](http://extension.maxthon.com/detail/index.php?view_id=1680)
+- **Dolphin**: [Tampermonkey](https://play.google.com/store/apps/details?id=net.tampermonkey.dolphin)
+- **UC Browser**: [Tampermonkey](https://www.tampermonkey.net/?browser=ucweb&ext=dhdg)
+- **Kiwi**: [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or [Violentmonkey](https://chrome.google.com/webstore/detail/violent-monkey/jinjaccalgkegednnccohejagnlnfdag)
+- **X Browser**: *(No plugin installation required)*
+  - Has built-in userscript support
+  - **Pros:** Easy to set up
+  - **Cons:** Less stable than desktop browsers for complex scripts, third-party parser pages, and ad-blocking scenarios
+- **Other Android browsers:**
+  - Stable userscript execution is not guaranteed
+  - If the script doesn't work, buttons don't appear, or parser pages behave unexpectedly, try switching to `Kiwi` or a desktop browser first
+
+#### Mobile (iOS)
+
+- **Safari**: [Tampermonkey](http://tampermonkey.net/?browser=safari) or [Userscripts (iOS 15+)](https://apps.apple.com/app/userscripts/id1463298887) | [Tutorial](https://blog.csdn.net/weixin_44786530/article/details/129695622)
+
+#### Web Version
+
+- **Link**: [VIP Video Cloud Parser](https://go.88lin.eu.org/vip/index.html)
+
+### 2. Install the Script
+
+1. Click the download link above
+2. On the script page, click **"Install this script"**
+3. Confirm the required permissions
+4. Refresh the target video website
+
+#### If the script doesn't work after installation, check the following first:
+
+1. Is the userscript manager enabled?
+2. Is the script installed successfully and toggled on?
+3. Is **"Allow userscripts"** (or equivalent) enabled in your browser?
+4. Is the current website in the script's supported site list?
+5. Is an ad blocker, privacy extension, or browser setting blocking the script?
+
+### 3. How to Use
+
+- **There is a floating "VIP" button in the top-left corner. Click the toggle below "VIP" (default is "Off") to turn it "On". Then select a parsing source from the VIP button.**
+- **Manual parsing**: Click the "VIP" button on the left side of the page and choose a parsing API
+- **Auto-play**: Click the "On" toggle to enable automatic parsing
+- **Move the button**: Right-click and drag the VIP button to any position
+
+---
+
+## 🛡 Ad Blocker Setup Guide (Strongly Recommended)
+
+All parsing APIs used by this script are hosted on third-party sites. **Some pages may contain ads, overlays, redirect buttons, or misleading content.**  
+These ads are not generated by this script, and the script **cannot guarantee 100% ad blocking** on third-party pages.
+
+For a better experience, using **AdGuard** alongside this script is highly recommended:
+
+- **Desktop**: Install the `AdGuard Browser Extension`
+- **Android**: Install the `AdGuard for Android` app
+- **iPhone / iPad**: Install `AdGuard for iOS` and enable Safari protection
+
+### Desktop Setup (Windows / macOS)
+
+AdGuard's browser extension supports `Chrome`, `Firefox`, `Edge`, `Opera`, and `Yandex Browser`.  
+Official docs: <https://adguard.com/kb/adguard-browser-extension/availability/>
+
+#### Installation Steps
+
+1. Open the AdGuard Browser Extension installation page:  
+   <https://adguard.com/kb/adguard-browser-extension/installation/>
+2. Select your browser and go to the official extension store page
+3. Click **"Install"**, **"Add to browser"**, or **"Get"**
+4. Ensure the extension is enabled after installation
+
+#### Recommended Configuration
+
+1. Click the AdGuard icon in the browser toolbar
+2. Confirm ad blocking is enabled
+3. Keep filter auto-updates turned on
+4. If ads still appear on a parser page, use AdGuard's **"Block element"** feature to manually hide them
+
+### Android Setup
+
+AdGuard's full Android app cannot be distributed via Google Play and must be downloaded from the official AdGuard site.  
+Official install docs: <https://adguard.com/kb/adguard-for-android/installation/>  
+Official browser ad troubleshooting (English): <https://adguard.com/en/support/adguard_for_android/doesnt_block_ads/in_browser.html>
+
+#### Installation Steps
+
+1. Open the AdGuard Android download page in your mobile browser:  
+   <https://adguard.com/apk>
+2. Download `adguard.apk`
+3. If prompted with **"Unknown source installation not allowed"**:
+   - Tap **"Settings"** in the system dialog
+   - Allow your browser to install apps from unknown sources
+4. Return to the installer and tap **"Install"**
+5. Open AdGuard once installation is complete
+
+#### First-Time Configuration
+
+1. On the AdGuard home screen, confirm the **main protection switch is ON**
+2. Open the **Protection** tab and confirm **Ad Blocking** is enabled
+3. Go to **Settings → Filtering → Network** and enable **HTTPS Filtering** — this is a key step in AdGuard's official mobile troubleshooting guide
+4. Go to **Settings → Filtering → Filters → Ad Filters** and confirm **AdGuard Base Filter** is active
+5. Keep automatic filter updates enabled
+
+#### Additional Recommended Configuration
+
+1. Open **App Management**
+2. Find your preferred video browser (e.g., `Edge`, `Chrome`, `Firefox`, `Samsung Internet`)
+3. Confirm its traffic is being filtered through AdGuard
+4. If ads are still leaking through, check whether that browser has been excluded from filtering
+
+Official app management docs: <https://adguard.com/kb/adguard-for-android/features/app-management/>
+
+#### Notes
+
+- **Some lightweight browsers may have unstable compatibility.** If ads persist, switch to `Edge`, `Chrome`, `Firefox`, or `Samsung Internet` for testing
+- **Even with HTTPS filtering enabled, some third-party parser page ads may still slip through** — especially inline ads, same-page redirect ads, or dynamically loaded script-based ads
+
+### iPhone / iPad Setup
+
+Official install docs: <https://adguard.com/kb/adguard-for-ios/installation/>  
+Safari Protection docs: <https://adguard.com/kb/adguard-for-ios/features/safari-protection/>
+
+#### Installation Steps
+
+1. Open the `App Store`
+2. Search for `AdGuard`
+3. Find `AdGuard - adblock & privacy` and install it
+4. Open AdGuard after installation
+
+#### Recommended Configuration
+
+1. Enable **Safari Protection** inside AdGuard
+2. In the Safari-related settings, **keep all Content Blockers enabled** — AdGuard's official docs explicitly recommend this for best filtering quality
+3. For stronger Safari filtering, explore AdGuard's advanced protection and Safari Web Extension settings
+
+#### Notes
+
+- iOS ad-blocking capabilities are limited by Safari and system-level restrictions
+- Even with AdGuard installed, **not all ads on third-party parser pages are guaranteed to be blocked**
+- If you use a non-Safari browser on iOS, blocking effectiveness may be reduced
+
+### Special Reminder for Script Users
+
+1. **This script does not inject ads.**
+2. **Some parsing APIs are hosted on third-party sites that may contain ads, overlays, download prompts, redirect buttons, or fake play buttons.**
+3. **Do not trust any prompts on these pages asking you to top up, download, update, join a group, claim a prize, or install an app.**
+4. **If you encounter misleading ads, close the parser page immediately or switch to a different parsing API.**
+5. **Ad blocking on mobile is generally less effective than on desktop.**
+6. **If a particular parsing API has excessive ads, stop using that API.**
+
+---
+
+## ✨ Feature Details
+
+### 1. Auto-Parse
+- **Default state**: Off
+- **How it works**: Automatically parses the video using the selected API when the page loads
+- **Scope**: Only supported for embedded playback-type APIs
+- **Notes**:
+  - If no parsing source is selected, one will be chosen at random
+  - If parsing fails, switch to another API manually
+  - Recommended to keep this off on sites where you already have a membership
+
+### 2. Button Customization
+- **How to move**: Hold right-click and drag
+- **Position memory**: Button position persists after page refresh
+- **Responsive**: Automatically adapts to different screen sizes
+
+### 3. Playback Modes
+- **Embedded playback**: Injects the player directly into the original page
+- **Pop-up playback**: Opens the player in a new tab (episode selection not supported in this mode)
+
+---
+
+## 📢 Important Disclaimers
+
+1. **API sources**: All parsing APIs are sourced from the public internet. The script author does not own these APIs.
+2. **Video quality**: The script **cannot address** quality issues (low resolution, buffering, audio/video sync) caused by the API provider.
+3. **Free tool**: This script is completely free. Do not be scammed into paying for it.
+4. **Copyright/infringement**:
+   - If a particular parsing API is infringing on copyrights, please contact **that API's provider or site owner** directly.
+   - This plugin is a freely distributed tool and does not bear any legal liability.
+5. **Ad warning**: Some parsing API pages may contain ads. **Do not trust any ad content you encounter.** Stay alert! 🧐
+   - This script does not inject ads.
+   - Any ads, redirects, download prompts, or fake play buttons on third-party parser pages are the responsibility of the API provider.
+   - Using `AdGuard` or another ad blocker is strongly recommended, but **100% ad-free experience on mobile cannot be guaranteed**.
+6. **Bug reports**: When reporting issues, **always include the full video URL** so problems can be diagnosed quickly! 🙏
+7. **Copyright notice**: This tool is intended for educational and research purposes only. Please respect intellectual property rights and support official content. Consider purchasing a legitimate membership after testing to support your favorite content creators.
+
+---
+
+## ⚠ Troubleshooting
+
+### 1. Audio/Video Sync Issues (Occasional)
+- **Possible causes**:
+  - Slow network connection
+  - High load on the video source server
+  - Overloaded parsing API
+- **Solutions**:
+  - Refresh the page
+  - Switch to a different parsing API
+  - Check your network connection
+
+### 2. Parsing Fails
+- **Possible causes**:
+  - Incorrect or incomplete video URL
+  - Parsing API temporarily unavailable
+  - The site updated its protection mechanism
+- **Solutions**:
+  - Confirm the video URL is complete and correct
+  - Try a different parsing API
+  - Wait for a script update
+
+### 3. Button Not Showing
+- **Possible causes**:
+  - Network issue
+  - Script not enabled
+  - Current website not in the supported list
+  - Conflict with another browser extension
+- **Solutions**:
+  - Try a different network or submit a bug report
+  - Ensure the script is installed and enabled
+  - Check whether the site is in the supported list
+  - Try disabling other extensions
+
+### 4. Mobile Usage Issues
+- **Possible causes**:
+  - Browser doesn't support userscripts
+  - Permission configuration issue
+- **Solutions**:
+  - Switch to a browser that supports userscripts
+  - Review userscript manager permission settings
+
+### 5. Auto-Parse Not Working
+- **Possible causes**:
+  - Auto-parse is not enabled
+  - Selected parsing API is no longer working
+- **Solutions**:
+  - Click the "Off" toggle to enable auto-parse
+  - Select a different parsing source from the VIP button
+
+---
+
+## 🤝 Contributing
+
+Issues and PRs are welcome. To reduce back-and-forth and improve efficiency, the repository includes Chinese-language templates and basic automation workflows.
+
+### Reporting Issues
+
+- Please read the [Contribution & Feedback Guide](./CONTRIBUTING.md) before submitting
+- GitHub Issues are categorized as:
+  - `Bug Report`
+  - `Feature Request`
+  - `Site Compatibility / Parser API Issue`
+- **Always include the full video page URL, your browser / userscript manager / OS environment, reproduction steps, and relevant screenshots**
+- **For parser-related issues, specify the exact parser source name**
+
+### Pull Requests
+
+- Please follow the repository's built-in PR template when submitting
+- Describe the context, your solution, compatibility impact, and test results
+- If the change affects mobile, site compatibility, or parser logic, explicitly state the scope
+
+### Automated Maintenance
+
+- New issues automatically receive a follow-up reminder message
+- Issues and PRs with no recent activity will be automatically labeled `stale`
+- Issues and PRs still inactive after the stale label is applied will be automatically closed
+
+For long-term collaboration, following the templates minimizes maintenance overhead for everyone.
+
+---
+
+## 📄 License
+
+This project is licensed under the [GPL License](https://www.gnu.org/licenses/gpl-3.0.txt).
+
+- ✅ You are free to use, copy, modify, and distribute this project.
+- 📝 Please retain the original author's copyright notice in any derivative works.
+
+## ⭐ Star History
+
+> [!TIP]
+> If this project has made your life or work easier, or if you're interested in its future development, please give it a Star — it's the motivation that keeps this open-source project alive.
+
+[![Star History Chart](https://api.star-history.com/svg?repos=88lin/video_vip&type=date&legend=top-left)](https://www.star-history.com/#88lin/video_vip&type=date&legend=top-left)
+
+**Reminder:** Great tools are meant to be shared — please use them responsibly. Respect intellectual property and support official content. This script is for educational and research purposes only; after trying it out, please consider buying a legitimate membership to support the creators whose work you enjoy.
