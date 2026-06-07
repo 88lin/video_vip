@@ -6,6 +6,39 @@
 
 爱发电：https://ifdian.net/a/xiaozero
 
+## 🎁 AI 免费福利
+
+<div align="center">
+  <a href="https://qoder.com.cn/referral?referral_code=5GcqSROkepj4e5RdlW9Ot7XrOXIy5V9q" target="_blank">
+    <img src="https://img.alicdn.com/imgextra/i2/O1CN01js79rH1mt5nkV0kEl_!!6000000005011-55-tps-640-180.svg" alt="Qoder" width="260" />
+  </a>
+
+  <h3>Qoder 高校师生免费领 3 个月 PRO 等量资源</h3>
+
+  <p>
+    新用户登录即享首月 Pro，学生 / 教师认证再领 <strong>4,000 Credits</strong>（有效期 3 个月）。<br />
+    可用国产顶级模型：<strong>GLM5.1</strong>、<strong>Qwen3.7max</strong>、<strong>Kimi2.6</strong> 等，其中 <strong>Qwen3.7max 每天 200 次免费调用</strong>。
+  </p>
+
+  <p>
+    <a href="https://qoder.com.cn/referral?referral_code=5GcqSROkepj4e5RdlW9Ot7XrOXIy5V9q" target="_blank">
+      <strong>立即领取免费 PRO 资源</strong>
+    </a>
+  </p>
+
+  <p>
+    <a href="https://qoder.com.cn/referral?referral_code=5GcqSROkepj4e5RdlW9Ot7XrOXIy5V9q" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/88lin/picx-images-hosting@master/4F525216DA03F8CE6094B89DF17DF91C.png" alt="Qoder 高校师生免费领取 Pro 资源" width="45%" />
+    </a>
+    <a href="https://qoder.com.cn/referral?referral_code=5GcqSROkepj4e5RdlW9Ot7XrOXIy5V9q" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/88lin/picx-images-hosting@master/ScreenShot_2026-06-07_233129_422.png" alt="Qoder 国产顶级 AI 模型" width="45%" />
+    </a>
+  </p>
+</div>
+
+> [!TIP]
+> QoderWork CN 是本地运行、自主规划、安全可控的 AI 工作搭子。描述需求，自动执行，直接交付结果。自然语言驱动、浏览器自动化、技能无限扩展，从输入到成品一步到位。
+
 ## 📖 项目概述
 
 这是一个强大的用户脚本，旨在帮助用户免费观看各大视频网站的VIP内容。通过集成多个第三方解析接口，该脚本能够绕过视频网站的会员限制，让用户享受免费的视频观看体验。
@@ -338,7 +371,6 @@ Safari 保护文档：<https://adguard.com/kb/adguard-for-ios/features/safari-pr
 
 本项目采用 [GPL License](https://www.gnu.org/licenses/gpl-3.0.txt) 开源协议。
 
-- ✅ 你可以自由地使用、复制、修改和分发本项目。
 - 📝 请在衍生作品中保留原作者的版权声明。
 
 ## ⭐ Star History
