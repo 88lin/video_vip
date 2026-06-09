@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              全网VIP视频免费破解去广告【最新3.1】
 // @namespace         video_vip
-// @version           3.1.8
+// @version           3.1.9
 // @description       全网VIP视频免费破解去广告，适配PC+移动，全网VIP视频解析：爱奇艺、腾讯、优酷、bilibili等视频免费解析！🔥真4K高清🔥【脚本长期维护更新，完全免费，无广告，仅限学习交流！！】
 // @icon              https://cdn.jsdmirror.com/gh/88lin/picx-images-hosting@master/favicon.67xwxgc03y.svg
 // @author            茉灵智库：https://blog.88lin.eu.org/article/46
@@ -219,8 +219,8 @@ const superVip = (function () {
         videoParseList: [
             {"name": "默认A", "type": "1,3", "url": "https://json.fongmi.cc/web?url="},
             {"name": "默认B", "type": "1,3", "url": "https://super.playr.top/?url="},
-            {"name": "CK解析", "type": "1,3", "url": "https://www.ckplayer.vip/jiexi/?url="},
             {"name": "Node解析", "type": "1,3", "url": "https://jx.nodenode.dpdns.org/?url="},
+            {"name": "CK解析", "type": "1,3", "url": "https://www.ckplayer.vip/jiexi/?url="},
 			{"name": "Player-JY", "type": "1,3", "url": "https://jx.playerjy.com/?url="},
             {"name": "虾米解析", "type": "1,3", "url": "https://jx.xmflv.com/?url="},
             {"name": "789解析", "type": "1,3", "url": "https://jiexi.789jiexi.icu:4433/?url="},
@@ -395,6 +395,9 @@ const superVip = (function () {
                         #${_CONFIG_.vipBoxId} #vip_reload{color:#fff1f2 !important;background:#be123c;border-color:#fda4af;box-shadow:0 5px 16px rgba(190,18,60,.28),inset 0 1px 0 rgba(255,255,255,.18);}
                         #${_CONFIG_.vipBoxId} .vip_icon{position:relative;}
                         #${_CONFIG_.vipBoxId} .vip_list {display:none; position:absolute; border-radius:10px; left:34px; top:-30px; text-align:center; background:#071827; border:1px solid #0ea5e9;box-shadow:0 12px 30px rgba(2,12,27,.5);padding:10px 0px; width:380px; max-height:420px; overflow-y:auto;}
+                        #${_CONFIG_.vipBoxId} .vip_repo_btn{position:absolute; top:8px; right:10px; display:inline-flex; align-items:center; justify-content:center; height:24px; padding:0 10px; border-radius:999px; border:1px solid rgba(125,211,252,.72); background:#e0f2fe; color:#082f49; font-size:11px; font-weight:700; line-height:24px; cursor:pointer; user-select:none; box-shadow:0 3px 8px rgba(14,165,233,.24); transition:background .18s ease,color .18s ease,border-color .18s ease,transform .18s ease;}
+                        #${_CONFIG_.vipBoxId} .vip_repo_btn:hover{background:#38bdf8; color:#ffffff; border-color:#bae6fd; transform:translateY(-1px);}
+                        #${_CONFIG_.vipBoxId} .vip_repo_btn:focus-visible{outline:2px solid #fef08a; outline-offset:2px;}
                         #${_CONFIG_.vipBoxId} .vip_list li{border-radius:5px; font-size:12px; color:#e0f7ff; text-align:center; width:calc(25% - 14px); line-height:22px; float:left; border:1px solid #155e75; background:#0b2942; padding:0 4px; margin:4px 2px;overflow:hidden;white-space: nowrap;text-overflow: ellipsis;-o-text-overflow:ellipsis;}
                         #${_CONFIG_.vipBoxId} .vip_list li:hover{color:#ffffff; border:1px solid #38bdf8; background:#0e7490;}
                         #${_CONFIG_.vipBoxId} .vip_list ul{padding-left: 10px; margin:0 0 4px 0;}
@@ -433,6 +436,7 @@ const superVip = (function () {
                     <div class="vip_icon">
                         <div class="img_box" title="选择解析源" style="color:white;font-size:16px;font-weight:bold;border-radius:5px;"><span style="color:#ffe4e6;">V</span>I<span style="color:#fde68a;">P</span></div>
                         <div class="vip_list">
+                            <button type="button" class="vip_repo_btn" title="打开 GitHub 开源地址">开源仓库⭐</button>
                             <div>
                                 <h3 style="color:#7dd3fc; font-weight: bold; font-size: 16px; padding:5px 0px;">[内嵌播放]</h3>
                                 <ul>
@@ -448,11 +452,11 @@ const superVip = (function () {
                                 </ul>
                             </div>
                             <div style="text-align:left;color:#b7d7e8;font-size:10px;padding:0px 10px;margin-top:10px;">
-                                <b>功能说明：</b>
-                                <br>&nbsp;&nbsp;1、公益脚本，完全免费，请勿上当受骗
-                                <br>&nbsp;&nbsp;2、自动解析功能默认关闭（自动解析只支持内嵌播放源）
-                                <br>&nbsp;&nbsp;3、如自动解析失败，请手动选择不同的解析源尝试
-                                <br>&nbsp;&nbsp;4、内嵌解析不了可以使用弹窗播放
+                                <b>👇必看说明👇：</b>
+                                <br>&nbsp;&nbsp;1、本脚本为开源项目，完全免费，请勿上当受骗
+                                <br>&nbsp;&nbsp;2、若无法播放可能是被运营商屏蔽了，可以挂梯子试试
+                                <br>&nbsp;&nbsp;3、最新版本请以 GitHub 仓库为准：88lin/video_vip
+                                <br>&nbsp;&nbsp;4、自动解析失败时，可手动切换其他解析源
                                 <br>&nbsp;&nbsp;5、如某些网站有会员可以关闭自动解析功能
                             </div>
                         </div>
@@ -501,6 +505,10 @@ const superVip = (function () {
             vipBox.find("#vip_reload").on("click", (event) => {
                 event.stopPropagation();
                 this.reloadCurrentPlayer();
+            });
+            vipBox.find(".vip_repo_btn").on("click", (event) => {
+                event.stopPropagation();
+                GM_openInTab("https://github.com/88lin/video_vip/", {active: true, insert: true, setParent: true});
             });
             vipBox.find(".vip_list .nq-li").each((liIndex, item) => {
                 item.addEventListener("click", () => {

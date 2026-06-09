@@ -9,10 +9,6 @@
 ## 🎁 AI 免费福利
 
 <div align="center">
-  <a href="https://qoder.com.cn/referral?referral_code=5GcqSROkepj4e5RdlW9Ot7XrOXIy5V9q" target="_blank">
-    <img src="https://img.alicdn.com/imgextra/i2/O1CN01js79rH1mt5nkV0kEl_!!6000000005011-55-tps-640-180.svg" alt="Qoder" width="260" />
-  </a>
-
   <h3>Qoder 高校师生免费领 3 个月 PRO 等量资源</h3>
 
   <p>
