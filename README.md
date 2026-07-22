@@ -17,16 +17,16 @@
   </p>
 
   <p>
-    <a href="https://qoder.com.cn/referral?referral_code=5GcqSROkepj4e5RdlW9Ot7XrOXIy5V9q" target="_blank">
+    <a href="https://qoder.com.cn/referral?referral_code=u7Kfz9uIEJ1vYoPSWEN7UBINSGNcCypa" target="_blank">
       <strong>立即领取免费 PRO 资源</strong>
     </a>
   </p>
 
   <p>
-    <a href="https://qoder.com.cn/referral?referral_code=5GcqSROkepj4e5RdlW9Ot7XrOXIy5V9q" target="_blank">
+    <a href="https://qoder.com.cn/referral?referral_code=u7Kfz9uIEJ1vYoPSWEN7UBINSGNcCypa" target="_blank">
       <img src="https://cdn.jsdelivr.net/gh/88lin/picx-images-hosting@master/4F525216DA03F8CE6094B89DF17DF91C.png" alt="Qoder 高校师生免费领取 Pro 资源" width="45%" />
     </a>
-    <a href="https://qoder.com.cn/referral?referral_code=5GcqSROkepj4e5RdlW9Ot7XrOXIy5V9q" target="_blank">
+    <a href="https://qoder.com.cn/referral?referral_code=u7Kfz9uIEJ1vYoPSWEN7UBINSGNcCypa" target="_blank">
       <img src="https://cdn.jsdelivr.net/gh/88lin/picx-images-hosting@master/ScreenShot_2026-06-07_233129_422.png" alt="Qoder 国产顶级 AI 模型" width="45%" />
     </a>
   </p>
