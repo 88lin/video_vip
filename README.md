@@ -374,6 +374,9 @@ Safari 保护文档：<https://adguard.com/kb/adguard-for-ios/features/safari-pr
 > [!TIP]
 > 如果本项目对您的生活 / 工作产生了帮助，或者您关注本项目的未来发展，请给项目 Star，这是我们维护这个开源项目的动力
 
-[![Star History Chart](https://api.star-history.com/svg?repos=88lin/video_vip&type=date&legend=top-left)](https://www.star-history.com/#88lin/video_vip&type=date&legend=top-left)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/88lin/video_vip/star-history/assets/my-star-history/star-history-dark.svg">
+  <img alt="Star History" src="https://raw.githubusercontent.com/88lin/video_vip/star-history/assets/my-star-history/star-history-light.svg">
+</picture>
 
 **温馨提示：** 好工具大家共享，请合理使用。请尊重版权，支持正版。本脚本仅供学习和研究使用，请在试用后购买正版会员支持您喜欢的内容创作者。
