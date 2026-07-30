@@ -2,38 +2,26 @@
 
 **如果这个项目对你有帮助，请给一个 ⭐ Star 支持一下，开源不易，您的支持是我更新的动力！**
 
-## ❤️ Sponsors
-
 爱发电：https://ifdian.net/a/xiaozero
 
-## 🎁 AI 免费福利
+## ❤️ 赞助商
 
-<div align="center">
-  <h3>Qoder 高校师生免费领 3 个月 PRO 等量资源</h3>
+<table>
+<tr>
+<td width="180" align="center" valign="middle">
+  <a href="https://www.workbuddy.cn/events/invite?inviteCode=w0x2ic45z"><img src="https://download.codebuddy.cn/web/workbuddy/0bebf86e38e7d71ff0c313d661e7753ff996c54e/assets/workbuddy-logo-WhgOvEF7.png" alt="WorkBuddy" width="150"></a>
+</td>
+<td valign="middle"><b><a href="https://www.workbuddy.cn/events/invite?inviteCode=w0x2ic45z">WorkBuddy</a></b>&nbsp;是腾讯出品的全能 AI 工作台，是中国最受欢迎的效率 AI 智能体服务，说出要求、开始执行任务、交付完整成果。其中Hy3模型限时免费使用，注册即可获取2000积分，每月再赠送500积分，可用Kimi-K3、GLM-5.2等模型。</td>
+</tr>
+<tr>
+<td width="180" align="center" valign="middle">
+  <a href="https://ps.air-outer.com/register?aff=ugVO"><img src="https://cdn.jsdmirror.com/gh/88lin/picx-images-hosting@master/90C5FAD072EA247822CB88BB32512A41.webp" alt="JuCodex" width="150"></a>
+</td>
+<td valign="middle"><b><a href="https://ps.air-outer.com/register?aff=ugVO">Agent Router</a></b>&nbsp;是免费公益大模型API平台，支持GPT-5.6、Claude Opus 5 等主流模型，国内直连。注册送＄125，每日签到得＄25，被邀得＄50，支持GitHub/LinuxDo登录（GitHub需2025.12.3前注册）</td>
+</tr>
+</table>
 
-  <p>
-    新用户登录即享首月 Pro，学生 / 教师认证再领 <strong>4,000 Credits</strong>（有效期 3 个月）。<br />
-    可用国产顶级模型：<strong>GLM5.1</strong>、<strong>Qwen3.7max</strong>、<strong>Kimi2.6</strong> 等，其中 <strong>Qwen3.7max 每天 200 次免费调用</strong>。
-  </p>
-
-  <p>
-    <a href="https://qoder.com.cn/referral?referral_code=u7Kfz9uIEJ1vYoPSWEN7UBINSGNcCypa" target="_blank">
-      <strong>立即领取免费 PRO 资源</strong>
-    </a>
-  </p>
-
-  <p>
-    <a href="https://qoder.com.cn/referral?referral_code=u7Kfz9uIEJ1vYoPSWEN7UBINSGNcCypa" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/88lin/picx-images-hosting@master/4F525216DA03F8CE6094B89DF17DF91C.png" alt="Qoder 高校师生免费领取 Pro 资源" width="45%" />
-    </a>
-    <a href="https://qoder.com.cn/referral?referral_code=u7Kfz9uIEJ1vYoPSWEN7UBINSGNcCypa" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/88lin/picx-images-hosting@master/ScreenShot_2026-06-07_233129_422.png" alt="Qoder 国产顶级 AI 模型" width="45%" />
-    </a>
-  </p>
-</div>
-
-> [!TIP]
-> QoderWork CN 是本地运行、自主规划、安全可控的 AI 工作搭子。描述需求，自动执行，直接交付结果。自然语言驱动、浏览器自动化、技能无限扩展，从输入到成品一步到位。
+---
 
 ## 📖 项目概述
 
@@ -372,7 +360,7 @@ Safari 保护文档：<https://adguard.com/kb/adguard-for-ios/features/safari-pr
 ## ⭐ Star History
 
 > [!TIP]
-> 如果本项目对您的生活 / 工作产生了帮助，或者您关注本项目的未来发展，请给项目 Star，这是我们维护这个开源项目的动力
+> 如果本项目对您产生了帮助，或者您关注本项目的未来发展，请给项目 Star，这是我们维护这个开源项目的动力
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/88lin/video_vip/star-history/assets/my-star-history/star-history-dark.svg">
