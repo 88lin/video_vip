@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              全网VIP视频免费破解去广告【最新3.1】
 // @namespace         video_vip
-// @version           3.1.13
+// @version           3.1.15
 // @description       全网VIP视频免费破解去广告，适配PC+移动，全网VIP视频解析：爱奇艺、腾讯、优酷、bilibili等视频免费解析！🔥真4K高清🔥【脚本长期维护更新，完全免费，无广告，仅限学习交流！！】
 // @license           GPL-3.0 License
 // @icon              https://cdn.jsdmirror.com/gh/88lin/picx-images-hosting@master/favicon.67xwxgc03y.svg
@@ -455,10 +455,11 @@ const superVip = (function () {
                             <div style="text-align:left;color:#b7d7e8;font-size:10px;padding:0px 10px;margin-top:10px;">
                                 <b>👇必看说明👇：</b>
                                 <br>&nbsp;&nbsp;1、本脚本为开源项目，完全免费，请勿上当受骗
-                                <br>&nbsp;&nbsp;2、若无法播放可能是被运营商屏蔽了，可以挂梯子试试
-                                <br>&nbsp;&nbsp;3、最新版本请以 GitHub 仓库为准：88lin/video_vip
-                                <br>&nbsp;&nbsp;4、自动解析失败时，可手动切换其他解析源
-                                <br>&nbsp;&nbsp;5、如某些网站有会员可以关闭自动解析功能
+                                <br>&nbsp;&nbsp;2、如遇卡顿，建议切换至海外网络环境后重试
+                                <br>&nbsp;&nbsp;3、若无法播放，可切换至海外网络环境后重试
+                                <br>&nbsp;&nbsp;4、最新版本请以 GitHub 仓库为准：88lin/video_vip
+                                <br>&nbsp;&nbsp;5、自动解析失败时，可手动切换其他解析源
+                                <br>&nbsp;&nbsp;6、如某些网站有会员可以关闭自动解析功能
                             </div>
                         </div>
                     </div>
