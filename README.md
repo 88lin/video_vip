@@ -9,6 +9,12 @@
 <table>
 <tr>
 <td width="180" align="center" valign="middle">
+  <a href="https://manus.im/invitation/EBN1N2RKB6J8ZQI?utm_source=invitation&utm_medium=social&utm_campaign=copy_link"><img src="https://cdn.jsdmirror.com/gh/88lin/picx-images-hosting@master/ScreenShot_2026-08-14_101018_342.webp" alt="Manus" width="150"></a>
+</td>
+<td valign="middle"><b><a href="https://manus.im/invitation/EBN1N2RKB6J8ZQI?utm_source=invitation&utm_medium=social&utm_campaign=copy_link">Manus</a></b>&nbsp;限时免费，点此邀请链接注册即可得1500积分。Manus 1.6 Lite 和 Manus 1.6 在 8月25日（新加坡时间）之前免费使用，不会消耗积分。</td>
+</tr>
+<tr>
+<td width="180" align="center" valign="middle">
   <a href="https://www.sheapi.top/sign-up?aff=MvcR"><img src="https://cdn.jsdmirror.com/gh/88lin/picx-images-hosting@master/ScreenShot_2026-08-06_174058_726.webp" alt="SheApi" width="150"></a>
 </td>
 <td valign="middle"><b><a href="https://www.sheapi.top/sign-up?aff=MvcR">SheApi</a></b>&nbsp;是一家可靠高效的 API 中转服务提供商，主要提供 Claude Code、Codex 等主流模型的高稳定中转能力，Codex 倍率补贴低至 0.06，GPT-Image-2生图每张0.04。受邀注册送$1 体验金，每日签到还可领取专属免费额度。</td>
