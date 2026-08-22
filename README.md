@@ -4,14 +4,14 @@
 
 爱发电：https://ifdian.net/a/xiaozero
 
-## ❤️ 赞助商
+## 💖 赞助商
 
 <table>
 <tr>
 <td width="180" align="center" valign="middle">
-  <a href="https://manus.im/invitation/EBN1N2RKB6J8ZQI?utm_source=invitation&utm_medium=social&utm_campaign=copy_link"><img src="https://cdn.jsdmirror.com/gh/88lin/picx-images-hosting@master/ScreenShot_2026-08-14_101018_342.webp" alt="Manus" width="150"></a>
+  <a href="https://agentrouter.org/register?aff=ugVO"><img src="https://cdn.jsdmirror.com/gh/88lin/picx-images-hosting@master/90C5FAD072EA247822CB88BB32512A41.webp" alt="Agent Router" width="150"></a>
 </td>
-<td valign="middle"><b><a href="https://manus.im/invitation/EBN1N2RKB6J8ZQI?utm_source=invitation&utm_medium=social&utm_campaign=copy_link">Manus</a></b>&nbsp;限时免费，点此邀请链接注册即可得1500积分。Manus 1.6 Lite 和 Manus 1.6 在 8月25日（新加坡时间）之前免费使用，不会消耗积分。</td>
+<td valign="middle"><b><a href="https://agentrouter.org/register?aff=ugVO">Agent Router</a></b>&nbsp;是免费公益大模型API平台，支持GPT-5.6、Claude Opus 5 等主流模型，国内直连。注册送＄175（每日签到得＄25，被邀得＄50），支持GitHub/LinuxDo登录。</td>
 </tr>
 <tr>
 <td width="180" align="center" valign="middle">
@@ -35,13 +35,7 @@
 <td width="180" align="center" valign="middle">
   <a href="https://gorouter.app/sign-up?aff=hfcV"><img src="https://cdn.jsdmirror.com/gh/88lin/picx-images-hosting@master/ScreenShot_2026-07-31_200922_732.webp" alt="GoRouter" width="150"></a>
 </td>
-<td valign="middle"><b><a href="https://gorouter.app/sign-up?aff=hfcV">GoRouter</a></b>&nbsp;是免费公益大模型API平台，可用Claude Opus 5 模型，目前较稳定。注册送＄70，每日签到得＄10左右，支持GitHub登录。</td>
-</tr>
-<tr>
-<td width="180" align="center" valign="middle">
-  <a href="https://agentrouter.org/register?aff=ugVO"><img src="https://cdn.jsdmirror.com/gh/88lin/picx-images-hosting@master/90C5FAD072EA247822CB88BB32512A41.webp" alt="Agent Router" width="150"></a>
-</td>
-<td valign="middle"><b><a href="https://agentrouter.org/register?aff=ugVO">Agent Router</a></b>&nbsp;是免费公益大模型API平台，支持GPT-5.6、Claude Opus 5 等主流模型，国内直连。注册送＄125，每日签到得＄25，被邀得＄50，支持GitHub/LinuxDo登录。</td>
+<td valign="middle"><b><a href="https://gorouter.app/sign-up?aff=hfcV">GoRouter</a></b>&nbsp;是免费公益大模型API平台，可用Claude Opus 5 模型。注册送＄70，每日签到得＄10左右，支持GitHub登录。</td>
 </tr>
 </table>
 
