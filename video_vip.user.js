@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              全网VIP视频免费破解去广告【最新3.2】
 // @namespace         video_vip
-// @version           3.2.0
+// @version           3.2.1
 // @description       全网VIP视频免费破解去广告，适配PC+移动，全网VIP视频解析：爱奇艺、腾讯、优酷、bilibili等视频免费解析！🔥真4K高清🔥【脚本长期维护更新，完全免费，无广告，仅限学习交流！！】
 // @license           GPL-3.0 License
 // @icon              https://cdn.jsdmirror.com/gh/88lin/picx-images-hosting@master/favicon.67xwxgc03y.svg
@@ -441,35 +441,45 @@ const superVip = (function () {
             return (j.list || []).filter(x => x.id && x.name);
         }
 
-        async function search(title) {
+        // 获取候选列表（官网联想偶发抖动，空结果自动重试一次）
+        async function searchCandidates(title) {
             let list = [];
             try { list = await searchList(title); } catch (e) {}
-            // 官网联想偶发抖动，空结果自动重试一次
             if (!list.length) {
                 await new Promise(r => setTimeout(r, 600));
-                if (_aborted) return null;
+                if (_aborted) return [];
                 try { list = await searchList(title); } catch (e) {}
             }
-            if (!list.length) return null;
-            // 严格匹配：精确 > 前缀 > 包含；单字片名不做反向包含，避免播错片
-            return list.find(x => x.name === title)
-                || list.find(x => x.name.startsWith(title))
-                || list.find(x => x.name.includes(title))
-                || (title.length >= 2 ? list.find(x => title.includes(x.name)) : null)
-                || null;
+            return list;
         }
 
-        // 首搜失败后：用剥离平台名等杂质的关键词自动重搜
+        // 候选排序：精确 > 前缀 > 包含 > 反向包含 > 其他（单字片名不做反向包含，避免播错片）
+        function rankCandidates(list, title) {
+            const score = (x) => {
+                if (x.name === title) return 4;
+                if (x.name.startsWith(title)) return 3;
+                if (x.name.includes(title)) return 2;
+                if (title.length >= 2 && title.includes(x.name)) return 1;
+                return 0;
+            };
+            const sorted = list.slice().sort((a, b) => score(b) - score(a));
+            sorted.forEach(x => { x._score = score(x); });
+            return sorted;
+        }
+
+        // 首搜失败后：用剥离平台名等杂质的关键词自动重搜；返回排序后的候选列表
         async function searchWithRetry(title) {
-            let hit = await search(title);
-            if (hit) return hit;
-            if (_aborted) return null; // 流程已取消，不再提示重搜
-            const alt = wsyzyCleanTitle(title);
-            if (alt && alt !== title && alt.length >= 2) {
-                toast(`改用「${alt}」重新搜索...`, false);
-                hit = await search(alt);
+            let list = await searchCandidates(title);
+            let usedTitle = title;
+            if (!list.length && !_aborted) {
+                const alt = wsyzyCleanTitle(title);
+                if (alt && alt !== title && alt.length >= 2) {
+                    toast(`改用「${alt}」重新搜索...`, false);
+                    usedTitle = alt;
+                    list = await searchCandidates(alt);
+                }
             }
-            return hit;
+            return rankCandidates(list, usedTitle);
         }
 
         // 等待页面标题就绪：SPA官网需等网络加载完成后
@@ -539,9 +549,18 @@ const superVip = (function () {
 
         function curEpNum() {
             const text = document.title + ' ' + location.href;
-            let m = text.match(/第\s*(\d{1,8})\s*[集期话]/);
+            let m;
+            // "第X集/期/话" 或无"第"前缀的"X集"（标题中常见）
+            m = text.match(/第?\s*(\d{1,8})\s*[集期话]/);
             if (m) return parseInt(m[1], 10);
-            m = location.href.match(/[?&](?:ep|episode|p|e)=(\d{1,8})(?!\d)/i);
+            // URL 查询参数：?ep=X / ?episode=X / ?p=X / ?e=X / ?cur=X（爱奇艺）
+            m = location.href.match(/[?&](?:ep|episode|p|e|cur)=(\d{1,5})(?!\d)/i);
+            if (m) return parseInt(m[1], 10);
+            // 腾讯：/pN.html（如 /p9.html → 第9集）
+            m = location.href.match(/\/p(\d{1,5})\.html/i);
+            if (m) return parseInt(m[1], 10);
+            // B站/Mango：/epN（如 /bangumi/play/ep33 → 第33集）
+            m = location.href.match(/\/ep(\d{1,5})(?!\d)/i);
             if (m) return parseInt(m[1], 10);
             return 0;
         }
@@ -651,15 +670,147 @@ const superVip = (function () {
                     });
                     placeholder.textContent = "无损云加载中...";
 
+                    const askChoice = (candidates, detailMap) => new Promise((resolveChoice, rejectChoice) => {
+                        let settled = false;
+                        let watch = null;
+                        const finish = (fn, val) => {
+                            if (settled) return;
+                            settled = true;
+                            if (watch) clearInterval(watch);
+                            // 恢复 placeholder 原始定位并移回 wrapper
+                            placeholder.style.position = 'absolute';
+                            placeholder.style.inset = '0';
+                            placeholder.style.left = '';
+                            placeholder.style.top = '';
+                            placeholder.style.width = '';
+                            placeholder.style.height = '';
+                            if (placeholder.parentNode && placeholder.parentNode !== wrapper) {
+                                wrapper.appendChild(placeholder);
+                            }
+                            fn(val);
+                        };
+                        placeholder.innerHTML = '';
+                        const head = document.createElement('div');
+                        head.textContent = '搜到多个相关结果，请选择要播放的：';
+                        applyInlineStyles(head, {
+                            fontSize: _CONFIG_.isMobile ? '13px' : '14px',
+                            fontWeight: '600', color: '#7dd3fc',
+                            padding: '0 10px', lineHeight: '1.6', flexShrink: '0'
+                        });
+                        const box = document.createElement('div');
+                        box.classList.add('wsyzy-no-scrollbar');
+                        applyInlineStyles(box, {
+                            width: 'min(440px, 94%)', maxHeight: '74%',
+                            overflowY: 'auto', scrollbarWidth: 'none',
+                            display: 'flex', flexDirection: 'column',
+                            gap: '8px', padding: '2px 4px', boxSizing: 'border-box'
+                        });
+                        if (!document.getElementById('wsyzy-no-scroll-style')) {
+                            const s = document.createElement('style');
+                            s.id = 'wsyzy-no-scroll-style';
+                            s.textContent = '.wsyzy-no-scrollbar::-webkit-scrollbar{display:none}';
+                            document.head.appendChild(s);
+                        }
+                        // 面板排序：年份优先（最新在前），同年份内名称匹配度优先
+                        const sorted = candidates.slice().sort((a, b) => {
+                            const ya = detailMap && detailMap[a.id] ? parseInt(detailMap[a.id].vod_year) || 0 : 0;
+                            const yb = detailMap && detailMap[b.id] ? parseInt(detailMap[b.id].vod_year) || 0 : 0;
+                            if (ya !== yb) return yb - ya;
+                            const sa = a._score || 0, sb = b._score || 0;
+                            return sb - sa;
+                        });
+                        sorted.forEach((c, i) => {
+                            const d = detailMap && detailMap[c.id];
+                            // 详情信息行：类别 · 年份 · 集数状态 · 更新时间（缺失的字段自动跳过）
+                            const meta = [];
+                            if (d) {
+                                if (d.type_name) meta.push(d.type_name);
+                                if (d.vod_year) meta.push(d.vod_year);
+                                if (d.vod_remarks) meta.push(d.vod_remarks);
+                                if (d.vod_time) meta.push('更新 ' + String(d.vod_time).split(' ')[0]);
+                            }
+
+                            const btn = document.createElement('button');
+                            btn.type = 'button';
+                            applyInlineStyles(btn, {
+                                display: 'block', width: '100%', margin: '0',
+                                padding: _CONFIG_.isMobile ? '9px 24px' : '8px 24px',
+                                borderRadius: '999px', cursor: 'pointer', textAlign: 'center',
+                                border: '1px solid ' + (i === 0 ? 'rgba(196,181,253,.8)' : 'rgba(255,255,255,.16)'),
+                                background: i === 0 ? 'rgba(139,92,246,.20)' : 'rgba(255,255,255,.07)',
+                                boxShadow: i === 0 ? '0 2px 12px rgba(139,92,246,.32)' : 'none',
+                                transition: 'all .15s ease', flexShrink: '0'
+                            });
+                            const nameEl = document.createElement('div');
+                            nameEl.textContent = c.name; // 外部数据只走 textContent，防注入
+                            applyInlineStyles(nameEl, {
+                                fontSize: _CONFIG_.isMobile ? '14px' : '13px', fontWeight: '700',
+                                lineHeight: '1.5', color: '#f8fafc',
+                                overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis'
+                            });
+                            const metaEl = document.createElement('div');
+                            metaEl.textContent = (i === 0 ? '⭐推荐 · ' : '') + (meta.join(' · ') || '暂无详情');
+                            applyInlineStyles(metaEl, {
+                                fontSize: _CONFIG_.isMobile ? '11px' : '10px', lineHeight: '1.5', marginTop: '2px',
+                                color: i === 0 ? 'rgba(221,214,254,.92)' : 'rgba(203,213,225,.7)'
+                            });
+                            btn.appendChild(nameEl);
+                            btn.appendChild(metaEl);
+                            btn.addEventListener('mouseenter', () => {
+                                if (i === 0) {
+                                    btn.style.background = 'rgba(139,92,246,.32)';
+                                } else {
+                                    btn.style.background = 'rgba(56,189,248,.15)';
+                                    btn.style.borderColor = 'rgba(56,189,248,.6)';
+                                }
+                            });
+                            btn.addEventListener('mouseleave', () => {
+                                if (i === 0) {
+                                    btn.style.background = 'rgba(139,92,246,.20)';
+                                } else {
+                                    btn.style.background = 'rgba(255,255,255,.07)';
+                                    btn.style.borderColor = 'rgba(255,255,255,.16)';
+                                }
+                            });
+                            btn.addEventListener('click', (ev) => {
+                                ev.stopPropagation();
+                                finish(resolveChoice, c);
+                            });
+                            box.appendChild(btn);
+                        });
+                        placeholder.appendChild(head);
+                        placeholder.appendChild(box);
+                        // 移到 body 上，防止页面 JS 重渲染容器时把 placeholder 一起清掉
+                        if (placeholder.parentNode !== document.body) document.body.appendChild(placeholder);
+                        // 按 iframe 实际位置定位；iframe 已被页面清掉时回退到视口尺寸
+                        const ir = iframe.getBoundingClientRect();
+                        const pw = ir.width > 0 ? ir.width : window.innerWidth;
+                        const ph = ir.height > 0 ? ir.height : window.innerHeight;
+                        const pl = ir.width > 0 ? ir.left : 0;
+                        const pt = ir.height > 0 ? ir.top : 0;
+                        placeholder.style.position = 'fixed';
+                        placeholder.style.inset = 'auto';
+                        placeholder.style.left = pl + 'px';
+                        placeholder.style.top = pt + 'px';
+                        placeholder.style.width = pw + 'px';
+                        placeholder.style.height = ph + 'px';
+                        placeholder.style.display = 'flex';
+                        // 等待选择期间用户切走了（_aborted）→ 结束等待，由主流程静默退出
+                        watch = setInterval(() => {
+                            if (_aborted) finish(rejectChoice, new Error('已取消'));
+                        }, 300);
+                    });
+
                     wrapper.appendChild(iframe);
                     wrapper.appendChild(epBar);
                     wrapper.appendChild(placeholder);
                     container.appendChild(wrapper);
 
                     resolve({
-                        iframe, epBar, wrapper,
+                        iframe, epBar, wrapper, container,
                         setStatus: (t) => { placeholder.textContent = t; placeholder.style.display = "flex"; },
-                        hidePlaceholder: () => { placeholder.style.display = "none"; }
+                        hidePlaceholder: () => { placeholder.style.display = "none"; },
+                        askChoice
                     });
                 }).catch(reject);
             });
@@ -700,11 +851,21 @@ const superVip = (function () {
                 });
                 epBar.appendChild(btn);
             });
-            wrapper.addEventListener('mousemove', (ev) => {
-                const r = wrapper.getBoundingClientRect();
-                epBar.style.display = (r.right - ev.clientX) < Math.max(60, r.width * 0.12) ? 'block' : 'none';
+            const trigger = document.createElement('div');
+            applyInlineStyles(trigger, {
+                position: 'absolute', top: '0', right: '0', bottom: '0',
+                width: '10px', zIndex: '2147483645', background: 'transparent'
             });
-            wrapper.addEventListener('mouseleave', () => { epBar.style.display = 'none'; });
+            wrapper.appendChild(trigger);
+            trigger.addEventListener('mouseenter', () => { epBar.style.display = 'block'; });
+            trigger.addEventListener('mouseleave', (ev) => {
+                if (epBar.contains(ev.relatedTarget)) return;
+                epBar.style.display = 'none';
+            });
+            epBar.addEventListener('mouseleave', (ev) => {
+                if (trigger.contains(ev.relatedTarget)) return;
+                epBar.style.display = 'none';
+            });
             if (_CONFIG_.isMobile) {
                 const tab = document.createElement('div');
                 tab.textContent = '☰ 选集';
@@ -730,7 +891,7 @@ const superVip = (function () {
                 el = document.createElement('div');
                 el.id = 'wsyzy_toast';
                 applyInlineStyles(el, {
-                    position: 'fixed', top: '25%', left: '40%', transform: 'translate(-50%, -50%)',
+                    position: 'fixed', top: '8%', transform: 'translate(-50%, -50%)',
                     zIndex: '2147483647', background: 'rgba(7,24,39,.95)', color: '#bae6fd',
                     border: '1px solid #0ea5e9', borderRadius: '10px', padding: '12px 24px',
                     fontSize: '14px', textAlign: 'center', maxWidth: '80vw',
@@ -740,6 +901,16 @@ const superVip = (function () {
             }
             el.textContent = msg;
             el.style.display = 'block';
+            const viewportW = window.innerWidth || document.documentElement.clientWidth;
+            let centerX = viewportW / 2;
+            const wrap = document.querySelector('.' + _CONFIG_.iframeWrapperClass);
+            if (wrap) {
+                const r = wrap.getBoundingClientRect();
+                if (r.width > 0) centerX = r.left + r.width / 2;
+            }
+            const half = el.offsetWidth / 2;
+            centerX = Math.max(half + 8, Math.min(centerX, viewportW - half - 8));
+            el.style.left = centerX + 'px';
             clearTimeout(el._timer);
             if (autoHide !== false) el._timer = setTimeout(() => { el.style.display = 'none'; }, 2500);
         }
@@ -791,9 +962,47 @@ const superVip = (function () {
                 ui.setStatus(`「${title}」无损云搜索中...`);
                 toast(`「${title}」无损云搜索中...`, false);
 
-                const hit = await searchWithRetry(title);
+                const candidates = await searchWithRetry(title);
                 if (_aborted) throw new Error('已取消');
-                if (!hit) throw new Error(`无损云未收录「${title}」，请切换其他解析源`);
+                if (!candidates.length) throw new Error(`无损云未收录「${title}」，请切换其他解析源`);
+
+                let hit;
+                if (candidates.length === 1) {
+                    hit = candidates[0];
+                } else {
+                    // 详情一次拉全：集数判定与选择面板共用；失败不阻塞，降级为仅名称选择
+                    ui.setStatus(`搜到 ${candidates.length} 个结果，正在加载详情...`);
+                    const detailMap = {};
+                    try {
+                        const dt = await req(`${API}?ac=detail&ids=${candidates.map(c => c.id).join(',')}`);
+                        const dj = JSON.parse(dt);
+                        (dj.list || []).forEach(d => { detailMap[d.vod_id] = d; });
+                    } catch (e) {}
+                    if (_aborted) throw new Error('已取消');
+
+                    const epNum = curEpNum();
+                    if (epNum > 0) {
+                        // 硬判定：当前集数只有唯一一个候选的集数足够 → 必然是它
+                        const viable = candidates.filter(c => {
+                            const d = detailMap[c.id];
+                            return d && parseEps(d.vod_play_url).length >= epNum;
+                        });
+                        if (viable.length === 1) hit = viable[0];
+                    }
+                    if (!hit && candidates[0]._score === 4 && (candidates.length < 2 || candidates[1]._score < 3)) {
+                        // 名称信号：首候选与搜索标题精确一致，且无前缀竞争者
+                        hit = candidates[0];
+                    }
+                    if (!hit) {
+                        toast(`搜到 ${candidates.length} 个结果，请选择要播放的`, false);
+                        hit = await ui.askChoice(candidates, detailMap); // 等待期间用户切源 → 抛出「已取消」
+                        if (_aborted) throw new Error('已取消');
+                    }
+                }
+                // 页面 JS 可能在 askChoice 期间清掉容器内容，导致 wrapper 脱离 DOM
+                if (!document.contains(ui.wrapper) && ui.container) {
+                    ui.container.appendChild(ui.wrapper);
+                }
                 ui.setStatus(`命中「${hit.name}」，获取选集...`);
                 toast(`命中「${hit.name}」，获取选集...`, false);
 
@@ -1049,7 +1258,6 @@ const superVip = (function () {
                 });
             });
 
-            //右键移动位置
             vipBox.mousedown(function (e) {
                 if (e.which !== 3) {
                     return;
