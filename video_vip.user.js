@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              全网VIP视频免费破解去广告【最新3.2】
 // @namespace         video_vip
-// @version           3.2.4
+// @version           3.2.5
 // @description       全网VIP视频免费破解去广告，适配PC+移动，全网VIP视频解析：爱奇艺、腾讯、优酷、bilibili等视频免费解析！🔥真4K高清🔥【脚本长期维护更新，完全免费，无广告，仅限学习交流！！】
 // @license           GPL-3.0 License
 // @icon              https://cdn.jsdmirror.com/gh/88lin/picx-images-hosting@master/favicon.67xwxgc03y.svg
@@ -51,12 +51,9 @@
 // @grant             GM_setValue
 // @grant             GM_xmlhttpRequest
 // @charset		      UTF-8
-// @license           GPL License
 // @compatible        firefox
 // @compatible        chrome
 // @compatible        opera safari edge
-// @compatible        safari
-// @compatible        edge
 // @downloadURL https://cdn.jsdmirror.com/gh/88lin/video_vip@main/video_vip.user.js
 // @updateURL https://cdn.jsdmirror.com/gh/88lin/video_vip@main/video_vip.user.js
 // ==/UserScript==
@@ -214,7 +211,7 @@ const superVip = (function () {
         wsyzyFsbBound: false,
         fullscreenCleanupBound: false,
         videoParseList: [
-            {"name": "默认解析", "type": "1", "wsyzy": true},
+            {"name": "无损云解析", "type": "1", "wsyzy": true},
             {"name": "TXNQ解析", "type": "1,3", "url": "https://bfq.txnp.cn/player?url="},
             {"name": "虾米解析", "type": "1,3", "url": "https://jx.xmflv.com/?url="},
             {"name": "playm3u8", "type": "1,3", "url": "https://www.playm3u8.cn/jiexi.php?url="},
@@ -547,12 +544,8 @@ const superVip = (function () {
         }
 
         function curEpNum() {
-            const text = document.title + ' ' + location.href;
             let m;
-            // "第X集/期/话" 或无"第"前缀的"X集"（标题中常见）
-            m = text.match(/第?\s*(\d{1,8})\s*[集期话]/);
-            if (m) return parseInt(m[1], 10);
-            // URL 查询参数：?ep=X / ?episode=X / ?p=X / ?e=X / ?cur=X（爱奇艺）
+            // URL 查询参数优先：?ep=X / ?episode=X / ?p=X / ?e=X / ?cur=X（爱奇艺）
             m = location.href.match(/[?&](?:ep|episode|p|e|cur)=(\d{1,5})(?!\d)/i);
             if (m) return parseInt(m[1], 10);
             // 腾讯：/pN.html（如 /p9.html → 第9集）
@@ -560,6 +553,9 @@ const superVip = (function () {
             if (m) return parseInt(m[1], 10);
             // B站/Mango：/epN（如 /bangumi/play/ep33 → 第33集）
             m = location.href.match(/\/ep(\d{1,5})(?!\d)/i);
+            if (m) return parseInt(m[1], 10);
+            // 标题中的"第X集/期/话"或无"第"前缀的"X集"（如"第12集"、"更新至12集"）
+            m = (document.title + ' ' + location.href).match(/第?\s*(\d{1,8})\s*[集期话]/);
             if (m) return parseInt(m[1], 10);
             return 0;
         }
@@ -999,7 +995,7 @@ const superVip = (function () {
                     }
                 }
                 // 页面 JS 可能在 askChoice 期间清掉容器内容，导致 wrapper 脱离 DOM
-                if (!document.contains(ui.wrapper) && ui.container) {
+                if (!document.contains(ui.wrapper) && ui.container && document.contains(ui.container)) {
                     ui.container.appendChild(ui.wrapper);
                 }
                 ui.setStatus(`命中「${hit.name}」，获取选集...`);
@@ -1112,7 +1108,6 @@ const superVip = (function () {
 						`);
 
             let type_1_str = "";
-            let type_2_str = "";
             let type_3_str = "";
             _CONFIG_.videoParseList.forEach((item, index) => {
                 if (item.wsyzy) {
@@ -1120,10 +1115,7 @@ const superVip = (function () {
                     return;
                 }
                 if (item.type.includes("1")) {
-                    type_1_str += `<li class="nq-li" title="${item.name}1" data-index="${index}">${item.name}</li>`;
-                }
-                if (item.type.includes("2")) {
-                    type_2_str += `<li class="tc-li" title="${item.name}" data-index="${index}">${item.name}</li>`;
+                    type_1_str += `<li class="nq-li" title="${item.name}" data-index="${index}">${item.name}</li>`;
                 }
                 if (item.type.includes("3")) {
                     type_3_str += `<li class="tc-li" title="${item.name}" data-index="${index}">${item.name}</li>`;
@@ -1161,7 +1153,7 @@ const superVip = (function () {
                                 <b>👇必看说明👇：</b>
                                 <br>&nbsp;&nbsp;1、本脚本为开源项目，完全免费，请勿上当受骗
                                 <br>&nbsp;&nbsp;2、视频内广告系资源自带，请勿轻信任何广告，可快进跳过
-                                <br>&nbsp;&nbsp;3、默认解析为资源采集模式，已屏蔽欧美、欧洲线路
+                                <br>&nbsp;&nbsp;3、无损云解析为资源采集模式，已屏蔽欧美、欧洲线路
                                 <br>&nbsp;&nbsp;4、如遇卡顿/无法加载，可切换不同线路/使用海外网络观看
                                 <br>&nbsp;&nbsp;5、后续更新在 GitHub 仓库：88lin/video_vip
                                 <br>&nbsp;&nbsp;6、资源均来自互联网公开分享，未提供资源上传、存储服务
@@ -1321,7 +1313,7 @@ const superVip = (function () {
         }
 
         selectPlayer() {
-            let index = GM_getValue(_CONFIG_.autoPlayerVal, 0);
+            let index = GM_getValue(_CONFIG_.autoPlayerVal, 2);
             let autoObj = _CONFIG_.videoParseList[index];
             if (!autoObj || !autoObj.type.includes("1")) return;
             let _th = this;
@@ -1331,7 +1323,7 @@ const superVip = (function () {
                 // （既避免覆盖用户选择，也避免对同一源重复执行导致播放器重建）
                 if (_CONFIG_.directMode || _CONFIG_.manualPicked) return;
                 // 重新读取：以用户最后的选择为准
-                let idx = GM_getValue(_CONFIG_.autoPlayerVal, 0);
+                let idx = GM_getValue(_CONFIG_.autoPlayerVal, 2);
                 let obj = _CONFIG_.videoParseList[idx];
                 if (!obj || !obj.type.includes("1")) return;
                 _th.showPlayerWindow(obj);
@@ -1434,7 +1426,7 @@ const superVip = (function () {
     return {
         start: () => {
             GM_setValue(_CONFIG_.flag, null);
-            // 一次性索引迁移：videoParseList 在 index 0 插入了「默认解析」，老用户存储的索引需要 +1
+            // 一次性索引迁移：videoParseList 在 index 0 插入了「无损云解析」，老用户存储的索引需要 +1
             const migKey = 'wsyzy_idx_migrated_' + window.location.host;
             if (!GM_getValue(migKey, false)) {
                 const oldVal = GM_getValue(_CONFIG_.autoPlayerVal, null);
@@ -1451,7 +1443,8 @@ const superVip = (function () {
             }
             _CONFIG_.currentPlayerNode = playerNode[0];
             mallCase = _CONFIG_.currentPlayerNode.name;
-            const targetConsumer = eval(`new ${mallCase}Consumer`);
+            const consumers = { Default: DefaultConsumer };
+            const targetConsumer = new (consumers[mallCase] || DefaultConsumer)();
             targetConsumer.parse();
         }
     }
