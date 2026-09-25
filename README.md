@@ -21,6 +21,12 @@
 <table>
 <tr>
 <td width="180" align="center" valign="middle">
+  <a href="https://lightvela.com/?ref=9TVZHV5GKS"><img src="https://lightvela.com/lightvela-logo.svg" alt="Agent Router" width="150"></a>
+</td>
+<td valign="middle"><b><a href="https://lightvela.com/?ref=9TVZHV5GKS">LightVela</a></b>&nbsp;是腾讯轻量云团队推出的云端 Agent 托管产品，它把 Agent 的部署、运维与 7×24 小时运行全部放在云端托管，支持跨会话记忆、连接主流聊天通道（微信、QQ、飞书、钉钉等），可自定义模型、工具、人设。新用户免费体验1个月，送 2核8G 云主机 + 4500 AI 积分。</td>
+</tr>
+<tr>
+<td width="180" align="center" valign="middle">
   <a href="https://agentrouter.org/register?aff=ugVO"><img src="https://cdn.jsdmirror.com/gh/88lin/picx-images-hosting@master/90C5FAD072EA247822CB88BB32512A41.webp" alt="Agent Router" width="150"></a>
 </td>
 <td valign="middle"><b><a href="https://agentrouter.org/register?aff=ugVO">Agent Router</a></b>&nbsp;是免费公益大模型API平台，支持GPT-6-Astra、gpt-5.6-sol、claude-opus-5、glm-5.3、deepseek-v4-flash等主流模型，国内直连。注册送＄175（每日签到得＄25，被邀得＄50），支持GitHub/LinuxDo登录。</td>
