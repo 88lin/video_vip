@@ -21,27 +21,21 @@
 <table>
 <tr>
 <td width="180" align="center" valign="middle">
-  <a href="https://lightvela.com/?ref=9TVZHV5GKS"><img src="https://lightvela.com/lightvela-logo.svg" alt="Agent Router" width="150"></a>
+  <a href="https://agentmore.chatglm.cn?Rawcode=PM9UPGFZAX8M"><img src="https://sfile.chatglm.cn/workspace/image/1c/1c83b94683.png" alt="AgentMore" width="150"></a>
 </td>
-<td valign="middle"><b><a href="https://lightvela.com/?ref=9TVZHV5GKS">LightVela</a></b>&nbsp;是腾讯轻量云团队推出的云端 Agent 托管产品，它把 Agent 的部署、运维与 7×24 小时运行全部放在云端托管，支持跨会话记忆、连接主流聊天通道（微信、QQ、飞书、钉钉等），可自定义模型、工具、人设。新用户免费体验1个月，送 2核8G 云主机 + 4500 AI 积分。</td>
+<td valign="middle"><b><a href="https://agentmore.chatglm.cn?Rawcode=PM9UPGFZAX8M">AgentMore</a></b>&nbsp;是智谱清言官方的多 Agent 云端协作平台，云端 7×24 小时运行、多任务并行，轻松组建专属 Agent 团队，可用GLM-5.3、GLM-5.3-Flash。双节活动期间（9月25日-10月7日）登录积分 ×10，普通用户日领2000积分，花出去的积分 100% 原路返还，单账号最多回血 15 万积分！</td>
 </tr>
 <tr>
 <td width="180" align="center" valign="middle">
   <a href="https://agentrouter.org/register?aff=ugVO"><img src="https://cdn.jsdmirror.com/gh/88lin/picx-images-hosting@master/90C5FAD072EA247822CB88BB32512A41.webp" alt="Agent Router" width="150"></a>
 </td>
-<td valign="middle"><b><a href="https://agentrouter.org/register?aff=ugVO">Agent Router</a></b>&nbsp;是免费公益大模型API平台，支持GPT-6-Astra、gpt-5.6-sol、claude-opus-5、glm-5.3、deepseek-v4-flash等主流模型，国内直连。注册送＄175（每日签到得＄25，被邀得＄50），支持GitHub/LinuxDo登录。</td>
+<td valign="middle"><b><a href="https://agentrouter.org/register?aff=ugVO">Agent Router</a></b>&nbsp;是免费公益大模型API平台，支持GPT-6-Astra、claude-opus-5、deepseek-v4-flash等主流模型，国内直连。注册送＄175（每日签到得＄25，被邀得＄50），支持GitHub/LinuxDo登录。</td>
 </tr>
 <tr>
 <td width="180" align="center" valign="middle">
   <a href="https://anyrouter.top/register?aff=woX5"><img src="https://cdn.jsdmirror.com/gh/88lin/picx-images-hosting@master/微信图片_20260907170036_114_2.webp" alt="Any Router" width="150"></a>
 </td>
-<td valign="middle"><b><a href="https://anyrouter.top/register?aff=woX5">Any Router</a></b>&nbsp;是免费公益大模型API平台，可用GPT-6-Astra、claude-fable-5.1等顶级模型。被邀得＄50，每日签到随机额度。</td>
-</tr>
-<tr>
-<td width="180" align="center" valign="middle">
-  <a href="https://www.sheapi.top/sign-up?aff=MvcR"><img src="https://cdn.jsdmirror.com/gh/88lin/picx-images-hosting@master/ScreenShot_2026-08-06_174058_726.webp" alt="SheApi" width="150"></a>
-</td>
-<td valign="middle"><b><a href="https://www.sheapi.top/sign-up?aff=MvcR">SheApi</a></b>&nbsp;是一家可靠高效的 API 中转服务提供商，主要提供 Claude Code、Codex 等主流模型的高稳定中转能力，Codex 倍率补贴低至 0.08，GPT-Image-2生图每张0.04。受邀注册送$1 体验金，每日签到还可领取专属免费额度。</td>
+<td valign="middle"><b><a href="https://anyrouter.top/register?aff=woX5">Any Router</a></b>&nbsp;是免费公益大模型API平台，可用GPT-6-Astra、claude-opus-5.5等顶级模型。被邀得＄50，每日签到随机额度。</td>
 </tr>
 <tr>
 <td width="180" align="center" valign="middle">
@@ -54,6 +48,18 @@
   <a href="https://github.com/88lin/workbuddy-auto-signin"><img src="https://download.codebuddy.cn/web/workbuddy/0bebf86e38e7d71ff0c313d661e7753ff996c54e/assets/workbuddy-logo-WhgOvEF7.png" alt="JustDoWork" width="150"></a>
 </td>
 <td valign="middle"><b><a href="https://github.com/88lin/workbuddy-auto-signin">workbuddy-auto-signin</a></b>&nbsp;是一个可以自动领取 WorkBuddy 每日签到积分、Buddy 旅行礼物、派 Buddy 出发、开盲盒、领任务奖励、连登兑换、断登补签的自动化脚本。Windows / macOS 定时任务，一句话交给 AI 自动配好，零 Token 静默运行。</td>
+</tr>
+<tr>
+<td width="180" align="center" valign="middle">
+  <a href="https://lightvela.com/?ref=9TVZHV5GKS"><img src="https://lightvela.com/lightvela-logo.svg" alt="Agent Router" width="150"></a>
+</td>
+<td valign="middle"><b><a href="https://lightvela.com/?ref=9TVZHV5GKS">LightVela</a></b>&nbsp;是腾讯轻量云团队推出的云端 Agent 托管产品，它把 Agent 的部署、运维与 7×24 小时运行全部放在云端托管，支持跨会话记忆、连接主流聊天通道（微信、QQ、飞书、钉钉等），可自定义模型、工具、人设。新用户免费体验1个月，送 2核8G 云主机 + 4500 AI 积分。</td>
+</tr>
+<tr>
+<td width="180" align="center" valign="middle">
+  <a href="https://www.sheapi.top/sign-up?aff=MvcR"><img src="https://cdn.jsdmirror.com/gh/88lin/picx-images-hosting@master/ScreenShot_2026-08-06_174058_726.webp" alt="SheApi" width="150"></a>
+</td>
+<td valign="middle"><b><a href="https://www.sheapi.top/sign-up?aff=MvcR">SheApi</a></b>&nbsp;是一家可靠高效的 API 中转服务提供商，主要提供 gpt-6-astra、kimi-k3、grok-4.7、glm-5.3、deepseek-v4.1-flash 等主流模型的高稳定中转能力，Codex 倍率补贴低至 0.06，GPT-Image-2生图每张0.04。受邀注册送$1 体验金，每日签到还可领取专属免费额度。</td>
 </tr>
 </table>
 
