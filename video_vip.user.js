@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              全网VIP视频免费解析去广告【最新3.2】
 // @namespace         video_vip
-// @version           3.2.7
+// @version           3.2.8
 // @description       全网VIP视频免费破解去广告，支持爱奇艺、腾讯、优酷、芒果、哔哩哔哩等主流视频网站VIP视频解析，适配桌面端和移动端【脚本长期维护更新，完全免费，无广告，仅限学习交流！】
 // @license           GPL-3.0 License
 // @icon              https://cdn.jsdmirror.com/gh/88lin/picx-images-hosting@master/favicon.67xwxgc03y.svg
@@ -212,9 +212,10 @@ const superVip = (function () {
         fullscreenCleanupBound: false,
         videoParseList: [
             {"name": "无损云解析", "type": "1", "wsyzy": true},
+            {"name": "闲鱼云解析", "type": "1,3", "url": "https://jx.xymp4.cc/?url="},
+            {"name": "TXNQ解析", "type": "1,3", "url": "https://bfq.txnp.cn/player?url="},
             {"name": "七七云解析", "type": "1,3", "url": "https://jx.77flv.cc/?url="},
             {"name": "七哥解析", "type": "1,3", "url": "https://jx.202617.xyz/tv.php?url="},
-            {"name": "TXNQ解析", "type": "1,3", "url": "https://bfq.txnp.cn/player?url="},
             {"name": "fongmi解析", "type": "1,3", "url": "https://json.fongmi.cc/web?url="},
             {"name": "冰豆解析", "type": "1,3", "url": "https://bd.jx.cn/?url="},
 			{"name": "HLS解析", "type": "1,3", "url": "https://jx.hls.one/?url="},
