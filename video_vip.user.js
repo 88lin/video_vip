@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              全网VIP视频免费解析去广告【最新3.2】
 // @namespace         video_vip
-// @version           3.2.6
+// @version           3.2.7
 // @description       全网VIP视频免费破解去广告，支持爱奇艺、腾讯、优酷、芒果、哔哩哔哩等主流视频网站VIP视频解析，适配桌面端和移动端【脚本长期维护更新，完全免费，无广告，仅限学习交流！】
 // @license           GPL-3.0 License
 // @icon              https://cdn.jsdmirror.com/gh/88lin/picx-images-hosting@master/favicon.67xwxgc03y.svg
@@ -212,21 +212,13 @@ const superVip = (function () {
         fullscreenCleanupBound: false,
         videoParseList: [
             {"name": "无损云解析", "type": "1", "wsyzy": true},
-            {"name": "TXNQ解析", "type": "1,3", "url": "https://bfq.txnp.cn/player?url="},
-            {"name": "虾米解析", "type": "1,3", "url": "https://jx.xmflv.com/?url="},
-            {"name": "playm3u8", "type": "1,3", "url": "https://www.playm3u8.cn/jiexi.php?url="},
-            {"name": "789解析", "type": "1,3", "url": "https://jiexi.789jiexi.icu:4433/?url="},
+            {"name": "七七云解析", "type": "1,3", "url": "https://jx.77flv.cc/?url="},
             {"name": "七哥解析", "type": "1,3", "url": "https://jx.202617.xyz/tv.php?url="},
+            {"name": "TXNQ解析", "type": "1,3", "url": "https://bfq.txnp.cn/player?url="},
             {"name": "fongmi解析", "type": "1,3", "url": "https://json.fongmi.cc/web?url="},
             {"name": "冰豆解析", "type": "1,3", "url": "https://bd.jx.cn/?url="},
-            {"name": "七七云解析", "type": "1,3", "url": "https://jx.77flv.cc/?url="},
-            {"name": "CK解析", "type": "1,3", "url": "https://www.ckplayer.vip/jiexi/?url="},
 			{"name": "HLS解析", "type": "1,3", "url": "https://jx.hls.one/?url="},
-			{"name": "极速解析", "type": "1,3", "url": "https://jx.2s0.cn/player/?url="},
-            {"name": "花旗解析", "type": "1,3", "url": "https://www.huaqi.live/?url="},
             {"name": "Player-JY", "type": "1,3", "url": "https://jx.playerjy.com/?url="},
-            {"name": "邦宁云解析", "type": "1,3", "url": "https://video.isyour.love/player/getplayer?url="},
-			{"name": "Yparse", "type": "1,3", "url": "https://jx.yparse.com/index.php?url="},
         ],
         playerContainers: [
             {
@@ -1313,7 +1305,7 @@ const superVip = (function () {
         }
 
         selectPlayer() {
-            let index = GM_getValue(_CONFIG_.autoPlayerVal, 2);
+            let index = GM_getValue(_CONFIG_.autoPlayerVal, 1);
             let autoObj = _CONFIG_.videoParseList[index];
             if (!autoObj || !autoObj.type.includes("1")) return;
             let _th = this;
@@ -1323,7 +1315,7 @@ const superVip = (function () {
                 // （既避免覆盖用户选择，也避免对同一源重复执行导致播放器重建）
                 if (_CONFIG_.directMode || _CONFIG_.manualPicked) return;
                 // 重新读取：以用户最后的选择为准
-                let idx = GM_getValue(_CONFIG_.autoPlayerVal, 2);
+                let idx = GM_getValue(_CONFIG_.autoPlayerVal, 1);
                 let obj = _CONFIG_.videoParseList[idx];
                 if (!obj || !obj.type.includes("1")) return;
                 _th.showPlayerWindow(obj);
