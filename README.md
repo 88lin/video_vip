@@ -23,21 +23,21 @@
 <table>
 <tr>
 <td width="180" align="center" valign="middle">
-  <a href="https://www.sheapi.top/sign-up?aff=MvcR"><img src="https://raw.githubusercontent.com/88lin/picx-images-hosting/master/ScreenShot_2026-08-06_174058_726.webp" alt="SheApi" width="150"></a>
+  <a href="https://agentrouter.org/register?aff=G5Sl"><img src="https://raw.githubusercontent.com/88lin/picx-images-hosting/master/90C5FAD072EA247822CB88BB32512A41.webp" alt="Agent Router" width="150"></a>
 </td>
-<td valign="middle"><b><a href="https://www.sheapi.top/sign-up?aff=MvcR">SheApi</a></b>&nbsp;是一家可靠高效的 API 中转服务提供商，主要提供 gpt-6-astra、kimi-k3、grok-4.7、glm-5.3、deepseek-v4.1-flash 等主流模型的高稳定中转能力，Codex 倍率补贴低至 0.06，GPT-Image-2生图每张0.04。受邀注册送$1 体验金，每日签到还可领取专属免费额度。</td>
+<td valign="middle"><b><a href="https://agentrouter.org/register?aff=G5Sl">Agent Router</a></b>&nbsp;是免费公益大模型API平台，支持Claude-opus-5.5、GPT-6 Astra、GPT-6.1 Sol、deepseek-v4-flash等主流模型，国内直连。注册送＄175（每日签到得＄25，被邀得＄50），支持GitHub/LinuxDo登录。</td>
 </tr>
 <tr>
 <td width="180" align="center" valign="middle">
-  <a href="https://agentrouter.org/register?aff=G5Sl"><img src="https://raw.githubusercontent.com/88lin/picx-images-hosting/master/90C5FAD072EA247822CB88BB32512A41.webp" alt="Agent Router" width="150"></a>
+  <a href="https://www.sheapi.top/sign-up?aff=MvcR"><img src="https://raw.githubusercontent.com/88lin/picx-images-hosting/master/ScreenShot_2026-08-06_174058_726.webp" alt="SheApi" width="150"></a>
 </td>
-<td valign="middle"><b><a href="https://agentrouter.org/register?aff=G5Sl">Agent Router</a></b>&nbsp;是免费公益大模型API平台，支持GPT-6-Astra、claude-opus-5、deepseek-v4-flash等主流模型，国内直连。注册送＄175（每日签到得＄25，被邀得＄50），支持GitHub/LinuxDo登录。</td>
+<td valign="middle"><b><a href="https://www.sheapi.top/sign-up?aff=MvcR">SheApi</a></b>&nbsp;是一家可靠高效的 API 中转服务提供商，主要提供 GPT-6 Astra、kimi-k3、grok-4.7、glm-5.3、deepseek-v4.1-flash 等主流模型的高稳定中转能力，Codex 倍率补贴低至 0.06，GPT-Image-2生图每张0.04。受邀注册送$1 体验金，每日签到还可领取专属免费额度。</td>
 </tr>
 <tr>
 <td width="180" align="center" valign="middle">
   <a href="https://anyrouter.top/register?aff=woX5"><img src="https://raw.githubusercontent.com/88lin/picx-images-hosting/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260907170036_114_2.webp" alt="Any Router" width="150"></a>
 </td>
-<td valign="middle"><b><a href="https://anyrouter.top/register?aff=woX5">Any Router</a></b>&nbsp;是免费公益大模型API平台，可用GPT-6-Astra、claude-opus-5.5等顶级模型。被邀得＄50，每日签到随机额度。</td>
+<td valign="middle"><b><a href="https://anyrouter.top/register?aff=woX5">Any Router</a></b>&nbsp;是免费公益大模型API平台，可用GPT-6 Astra、Claude-opus-5.5等顶级模型。被邀得＄50，每日签到随机额度。</td>
 </tr>
 <tr>
 <td width="180" align="center" valign="middle">
@@ -52,8 +52,6 @@
 <td valign="middle"><b><a href="https://lightvela.ai/?ref=CC9FGXAT9W">LightVela</a></b>&nbsp;是腾讯轻量云团队推出的云端 Agent 托管产品，它把 Agent 的部署、运维与 7×24 小时运行全部放在云端托管，支持跨会话记忆、连接主流聊天通道（微信、QQ、飞书、钉钉等），可自定义模型、工具、人设。新用户免费体验1个月，送 2核8G 云主机 + 4500 AI 积分。</td>
 </tr>
 </table>
-
----
 
 ## 📖 项目概述
 
