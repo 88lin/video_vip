@@ -9,6 +9,12 @@
 [![GitHub Stars](https://img.shields.io/github/stars/88lin/video_vip?style=flat&logo=github&label=Stars&color=f5c518)](https://github.com/88lin/video_vip/stargazers)
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-1f6feb.svg)](https://www.gnu.org/licenses/gpl-3.0.txt)
 [![下载脚本](https://img.shields.io/badge/%E4%B8%8B%E8%BD%BD%E8%84%9A%E6%9C%AC-%E7%82%B9%E5%87%BB%E5%AE%89%E8%A3%85-2ea44f)](https://cdn.jsdelivr.net/gh/88lin/video_vip@main/video_vip.user.js)
+[![GitHub Forks](https://img.shields.io/github/forks/88lin/video_vip?style=flat&logo=github&label=Forks&color=0969da)](https://github.com/88lin/video_vip/network/members)
+[![Author](https://img.shields.io/badge/Author-88lin-8250df?style=flat&logo=github&logoColor=white)](https://github.com/88lin)
+
+<p align="center">
+<a href="https://trendshift.io/repositories/35754?utm_source=trendshift-badge&utm_medium=badge&utm_campaign=badge-trendshift-35754" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/35754/daily?language=JavaScript" alt="88lin%2Fvideo_vip | Trendshift" width="250" height="55"/></a> <a href="https://trendshift.io/repositories/35754?utm_source=trendshift-badge&utm_medium=badge&utm_campaign=badge-trendshift-35754" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/35754/weekly?language=JavaScript" alt="88lin%2Fvideo_vip | Trendshift" width="250" height="55"/></a>
+</p>
 
 **如果这个项目对你有帮助，请给一个 ⭐ Star 支持一下，开源不易，您的支持是我更新的动力！**
 
