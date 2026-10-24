@@ -22,6 +22,18 @@
 
 </div>
 
+## 🌈 姊妹项目推荐
+
+> 同作者的其它开源作品，**全部免费**，按 ⭐ Star 数排序。[更多作品](https://dev.88lin.eu.org/)
+
+| 项目 | 一句话简介 | ⭐ Star | 相关链接 |
+| :--- | :--- | :---: | :--- |
+| ✨ **[workbuddy-auto-signin](https://github.com/88lin/workbuddy-auto-signin)** | 自动领取 WorkBuddy / Qoder CN 每日签到积分与成长中心全部奖励：签到、Buddy 旅行礼物、开盲盒、领任务、连登兑换、断登补签全覆盖。纯 Python 本地静默运行，一句话让 AI 配好定时任务，积分再也不漏领 | <a href="https://github.com/88lin/workbuddy-auto-signin/stargazers"><img src="https://img.shields.io/github/stars/88lin/workbuddy-auto-signin?style=flat-square&logo=github&color=0969da" alt="Stars" width="116"></a> | — |
+| 💻 **[computer-repair-skill](https://github.com/88lin/computer-repair-skill)** | 把 Codex、Claude Code 变成你的跨平台电脑维修助手。64 个按需加载的 Playbook 覆盖诊断、清理、性能、网络与安全维护：C 盘爆满、电脑卡顿、流氓软件、数据恢复都能直接问，先取证、再动手 | <a href="https://github.com/88lin/computer-repair-skill/stargazers"><img src="https://img.shields.io/github/stars/88lin/computer-repair-skill?style=flat-square&logo=github&color=1a7f37" alt="Stars" width="110"></a> | [官网](https://repair.88lin.eu.org/) |
+| 🎧 **[lofi-radio-web](https://github.com/88lin/lofi-radio-web)** | 为学习工作场景打造的 Lofi Radio 网页版：macOS 灵动岛设计，收录 21 个精选电台，支持睡眠定时，打开即用无需下载。平稳节奏、循环旋律，公认的专注背景音首选 | <a href="https://github.com/88lin/lofi-radio-web/stargazers"><img src="https://img.shields.io/github/stars/88lin/lofi-radio-web?style=flat-square&logo=github&color=8250df" alt="Stars" width="100"></a> | [官网](https://lofi.88lin.eu.org) |
+| 🎨 **[GPT Image Studio](https://github.com/88lin/gpt-image-studio)** | 基于 OpenAI gpt-image-2.5 的图片生成 / 编辑 / 提示词工作台：多参考图、画板标注、遮罩编辑、Agent 多轮对话改图，内置大量中英文提示词模板一键套用，数据全部本地存储，隐私零上传 | <a href="https://github.com/88lin/gpt-image-studio/stargazers"><img src="https://img.shields.io/github/stars/88lin/gpt-image-studio?style=flat-square&logo=github&color=bf3989" alt="Stars" width="129"></a> | [官网](https://88lin.github.io/gpt-image-studio)|
+| 🤖 **[agentrouter-auto-signin](https://github.com/88lin/agentrouter-auto-signin)** | 自动领取 AgentRouter 每日签到额度：支持多账号与余额自动换算，Win / macOS / Linux 定时任务本地静默运行，错过自动补签 —— 免费额度天天到账，不用再手动点 | <a href="https://github.com/88lin/agentrouter-auto-signin/stargazers"><img src="https://img.shields.io/github/stars/88lin/agentrouter-auto-signin?style=flat-square&logo=github&color=bc4c00" alt="Stars" width="100"></a> | — |
+
 ## 💖 赞助商
 
 > 想出现在这里？联系 [bytevian@qq.com](mailto:bytevian@qq.com)
@@ -38,24 +50,6 @@
   <a href="https://www.sheapi.top/sign-up?aff=MvcR"><img src="https://raw.githubusercontent.com/88lin/picx-images-hosting/master/ScreenShot_2026-08-06_174058_726.webp" alt="SheApi" width="150"></a>
 </td>
 <td valign="middle"><b><a href="https://www.sheapi.top/sign-up?aff=MvcR">SheApi</a></b>&nbsp;是一家可靠高效的 API 中转服务提供商，主要提供 GPT-6 Astra、kimi-k3、grok-4.7、glm-5.3、deepseek-v4.1-flash 等主流模型的高稳定中转能力，Codex 倍率补贴低至 0.06，GPT-Image-2生图每张0.04。受邀注册送$1 体验金，每日签到还可领取专属免费额度。</td>
-</tr>
-<tr>
-<td width="180" align="center" valign="middle">
-  <a href="https://anyrouter.top/register?aff=woX5"><img src="https://raw.githubusercontent.com/88lin/picx-images-hosting/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260907170036_114_2.webp" alt="Any Router" width="150"></a>
-</td>
-<td valign="middle"><b><a href="https://anyrouter.top/register?aff=woX5">Any Router</a></b>&nbsp;是免费公益大模型API平台，可用GPT-6 Astra、Claude-opus-5.5等顶级模型。被邀得＄50，每日签到随机额度。</td>
-</tr>
-<tr>
-<td width="180" align="center" valign="middle">
-  <a href="https://www.workbuddy.cn/events/invite?inviteCode=w0x2ic45z"><img src="https://raw.githubusercontent.com/88lin/picx-images-hosting/master/workbuddy-logo.png" alt="WorkBuddy" width="150"></a>
-</td>
-<td valign="middle"><b><a href="https://www.workbuddy.cn/events/invite?inviteCode=w0x2ic45z">WorkBuddy</a></b>&nbsp;是腾讯出品的全能 AI 工作台，是中国最受欢迎的效率 AI 智能体服务，说出要求、开始执行任务、交付完整成果。其中Hy4模型限时免费使用，注册即可获取2000积分，每月再赠送500积分，可用Kimi-K3、GLM-5.3、Deepseek-V4.1-Flash等模型。还可以配合 <a href="https://github.com/88lin/workbuddy-auto-signin">workbuddy-auto-signin</a> 脚本自动签到，每日积分、Buddy 旅行礼物、盲盒、任务奖励等福利一键领取。</td>
-</tr>
-<tr>
-<td width="180" align="center" valign="middle">
-  <a href="https://lightvela.ai/?ref=CC9FGXAT9W"><img src="https://raw.githubusercontent.com/88lin/picx-images-hosting/master/lightvela-logo.svg" alt="LightVela" width="150"></a>
-</td>
-<td valign="middle"><b><a href="https://lightvela.ai/?ref=CC9FGXAT9W">LightVela</a></b>&nbsp;是腾讯轻量云团队推出的云端 Agent 托管产品，它把 Agent 的部署、运维与 7×24 小时运行全部放在云端托管，支持跨会话记忆、连接主流聊天通道（微信、QQ、飞书、钉钉等），可自定义模型、工具、人设。新用户免费体验1个月，送 2核8G 云主机 + 4500 AI 积分。</td>
 </tr>
 </table>
 
