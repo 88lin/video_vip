@@ -26,13 +26,13 @@
 
 > 同作者的其它开源作品，**全部免费**，按 ⭐ Star 数排序。[更多作品](https://dev.88lin.eu.org/)
 
-| 项目 | 一句话简介 | ⭐ Star | 相关链接 |
-| :--- | :--- | :---: | :--- |
-| ✨ **[workbuddy-auto-signin](https://github.com/88lin/workbuddy-auto-signin)** | 自动领取 WorkBuddy / Qoder CN 每日签到积分与成长中心全部奖励：签到、Buddy 旅行礼物、开盲盒、领任务、连登兑换、断登补签全覆盖。纯 Python 本地静默运行，一句话让 AI 配好定时任务，积分再也不漏领 | <a href="https://github.com/88lin/workbuddy-auto-signin/stargazers"><img src="https://img.shields.io/github/stars/88lin/workbuddy-auto-signin?style=flat-square&logo=github&color=0969da" alt="Stars" width="116"></a> | — |
-| 💻 **[computer-repair-skill](https://github.com/88lin/computer-repair-skill)** | 把 Codex、Claude Code 变成你的跨平台电脑维修助手。64 个按需加载的 Playbook 覆盖诊断、清理、性能、网络与安全维护：C 盘爆满、电脑卡顿、流氓软件、数据恢复都能直接问，先取证、再动手 | <a href="https://github.com/88lin/computer-repair-skill/stargazers"><img src="https://img.shields.io/github/stars/88lin/computer-repair-skill?style=flat-square&logo=github&color=1a7f37" alt="Stars" width="110"></a> | [官网](https://repair.88lin.eu.org/) |
-| 🎧 **[lofi-radio-web](https://github.com/88lin/lofi-radio-web)** | 为学习工作场景打造的 Lofi Radio 网页版：macOS 灵动岛设计，收录 21 个精选电台，支持睡眠定时，打开即用无需下载。平稳节奏、循环旋律，公认的专注背景音首选 | <a href="https://github.com/88lin/lofi-radio-web/stargazers"><img src="https://img.shields.io/github/stars/88lin/lofi-radio-web?style=flat-square&logo=github&color=8250df" alt="Stars" width="100"></a> | [官网](https://lofi.88lin.eu.org) |
-| 🎨 **[GPT Image Studio](https://github.com/88lin/gpt-image-studio)** | 基于 OpenAI gpt-image-2.5 的图片生成 / 编辑 / 提示词工作台：多参考图、画板标注、遮罩编辑、Agent 多轮对话改图，内置大量中英文提示词模板一键套用，数据全部本地存储，隐私零上传 | <a href="https://github.com/88lin/gpt-image-studio/stargazers"><img src="https://img.shields.io/github/stars/88lin/gpt-image-studio?style=flat-square&logo=github&color=bf3989" alt="Stars" width="129"></a> | [官网](https://88lin.github.io/gpt-image-studio)|
-| 🤖 **[agentrouter-auto-signin](https://github.com/88lin/agentrouter-auto-signin)** | 自动领取 AgentRouter 每日签到额度：支持多账号与余额自动换算，Win / macOS / Linux 定时任务本地静默运行，错过自动补签 —— 免费额度天天到账，不用再手动点 | <a href="https://github.com/88lin/agentrouter-auto-signin/stargazers"><img src="https://img.shields.io/github/stars/88lin/agentrouter-auto-signin?style=flat-square&logo=github&color=bc4c00" alt="Stars" width="100"></a> | — |
+| 项目 | 一句话简介 | 链接 |
+| :--- | :--- | :--- |
+| ✨ **[workbuddy-auto-signin](https://github.com/88lin/workbuddy-auto-signin)** | 自动领取 WorkBuddy / Qoder CN 每日签到积分与成长中心全部奖励：签到、Buddy 旅行礼物、开盲盒、领任务、连登兑换、断登补签全覆盖。纯 Python 本地静默运行，一句话让 AI 配好定时任务，积分再也不漏领 <a href="https://github.com/88lin/workbuddy-auto-signin/stargazers"><img src="https://img.shields.io/github/stars/88lin/workbuddy-auto-signin?style=flat-square&logo=github&label=Stars&labelColor=0D1117&color=1F6FEB" alt="Stars" /></a> | — |
+| 💻 **[computer-repair-skill](https://github.com/88lin/computer-repair-skill)** | 把 Codex、Claude Code 变成你的跨平台电脑维修助手。64 个按需加载的 Playbook 覆盖诊断、清理、性能、网络与安全维护：C 盘爆满、电脑卡顿、流氓软件、数据恢复都能直接问，先取证、再动手 <a href="https://github.com/88lin/computer-repair-skill/stargazers"><img src="https://img.shields.io/github/stars/88lin/computer-repair-skill?style=flat-square&logo=github&label=Stars&labelColor=0D1117&color=07C160" alt="Stars" /></a> | [官网](https://repair.88lin.eu.org/) |
+| 🎧 **[lofi-radio-web](https://github.com/88lin/lofi-radio-web)** | 为学习工作场景打造的 Lofi Radio 网页版：macOS 灵动岛设计，收录 21 个精选电台，支持睡眠定时，打开即用无需下载。平稳节奏、循环旋律，公认的专注背景音首选 | [官网](https://lofi.88lin.eu.org) |
+| 🎨 **[GPT Image Studio](https://github.com/88lin/gpt-image-studio)** | 基于 OpenAI gpt-image-2.5 的图片生成 / 编辑 / 提示词工作台：多参考图、画板标注、遮罩编辑、Agent 多轮对话改图，内置大量中英文提示词模板一键套用，数据全部本地存储，隐私零上传 | [官网](https://88lin.github.io/gpt-image-studio) |
+| 🤖 **[agentrouter-auto-signin](https://github.com/88lin/agentrouter-auto-signin)** | 自动领取 AgentRouter 每日签到额度：支持多账号与余额自动换算，Win / macOS / Linux 定时任务本地静默运行，错过自动补签 —— 免费额度天天到账，不用再手动点 | — |
 
 ## 💖 赞助商
 
